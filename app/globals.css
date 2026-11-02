@@ -1,0 +1,583 @@
+:root {
+  --accent: #FF5A1F;
+  --bg-main: #F2EEE5;
+  --surface: #FBFAF6;
+  --ink: #14181F;
+  --muted: #5A5F69;
+  --teal: #0B5D66;
+  --teal-light: #D3E6E3;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-main);
+  color: var(--ink);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Typography helpers ── */
+.d {
+  font-family: 'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif;
+}
+
+.m {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* ── Blueprint Grids ── */
+.gb {
+  background-image:
+    linear-gradient(rgba(20, 24, 31, .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 24, 31, .06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.gd {
+  background-image:
+    linear-gradient(rgba(242, 238, 229, .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(242, 238, 229, .06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ── Interactive Elements & Hover Micro-interactions ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 28px;
+  border-radius: 10px;
+  font: 700 16px 'Inter Tight', system-ui, sans-serif;
+  cursor: pointer;
+  transition: transform .18s cubic-bezier(.16, 1, .3, 1), box-shadow .18s cubic-bezier(.16, 1, .3, 1), background-color .18s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 90, 31, .28);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(20, 24, 31, .2);
+}
+
+.hb {
+  transition: transform .18s cubic-bezier(.16, 1, .3, 1), box-shadow .18s cubic-bezier(.16, 1, .3, 1);
+}
+
+.hb:hover {
+  transform: translateY(-2px);
+}
+
+.hb:active {
+  transform: translateY(1px);
+}
+
+.nv {
+  transition: color .15s ease, border-color .15s ease;
+}
+
+.nv:hover {
+  color: var(--ink);
+}
+
+.fl {
+  transition: color .15s ease, transform .15s ease;
+  display: inline-block;
+}
+
+.fl:hover {
+  color: var(--bg-main);
+  transform: translateX(3px);
+}
+
+.pill {
+  cursor: pointer;
+  transition: transform .15s cubic-bezier(.16, 1, .3, 1), box-shadow .15s ease, background-color .15s ease, color .15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+}
+
+.pill:active {
+  transform: translateY(1px);
+}
+
+.chip {
+  transition: background .15s ease, color .15s ease, transform .15s ease;
+  cursor: pointer;
+}
+
+.chip:hover {
+  background: var(--ink) !important;
+  color: var(--bg-main) !important;
+  transform: translateY(-1px);
+}
+
+.tile {
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+.tile:hover {
+  background: var(--ink);
+  color: var(--bg-main);
+  transform: translateY(-2px);
+}
+
+.jump {
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+.jump:hover {
+  background: var(--ink);
+  color: var(--bg-main);
+  transform: translateX(4px);
+}
+
+/* ── FAQ Details Accordion ── */
+details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.chev {
+  transition: transform .25s cubic-bezier(.16, 1, .3, 1);
+}
+
+details[open] .chev {
+  transform: rotate(180deg);
+}
+
+/* ── Entrance Fade Up Animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-fade-up {
+  animation: fadeInUp .55s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.anim-delay-1 {
+  animation-delay: .08s;
+}
+
+.anim-delay-2 {
+  animation-delay: .16s;
+}
+
+.anim-delay-3 {
+  animation-delay: .24s;
+}
+
+/* ── Hero Plan Card ── */
+.opt {
+  transition: border-color .18s ease, background-color .18s ease, transform .18s ease;
+}
+
+.opt:hover {
+  transform: translateX(2px);
+}
+
+.opt:not([aria-pressed="true"]):hover {
+  border-color: var(--ink) !important;
+  background-color: rgba(251, 250, 246, 0.8) !important;
+}
+
+.plan {
+  animation: planIn .28s cubic-bezier(.16, 1, .3, 1);
+}
+
+@keyframes planIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── 01 — Xizmatlar: Modern Service Cards ── */
+.service-card {
+  background: var(--surface);
+  border: 1.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform .22s cubic-bezier(.16, 1, .3, 1), box-shadow .22s cubic-bezier(.16, 1, .3, 1), border-color .22s ease, background-color .22s ease;
+  box-shadow: 4px 4px 0 var(--ink);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0 var(--accent), 8px 8px 0 var(--ink);
+}
+
+.service-icon {
+  transition: transform .25s cubic-bezier(.16, 1, .3, 1);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.18) rotate(-4deg);
+}
+
+.service-ruler-bar {
+  transition: filter .22s ease, transform .22s ease;
+}
+
+.service-card:hover .service-ruler-bar {
+  filter: drop-shadow(0 0 6px rgba(255, 90, 31, .75));
+}
+
+/* ── 02 — Qanday ishlaydi: Interactive Step Timeline ── */
+@keyframes radarPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 31, .75);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 90, 31, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 31, 0);
+  }
+}
+
+.pulse-node {
+  animation: radarPulse 2.4s infinite cubic-bezier(.4, 0, .6, 1);
+}
+
+.step-num {
+  transition: -webkit-text-stroke-color .22s ease, color .22s ease, transform .22s ease;
+}
+
+.step-col:hover .step-num {
+  -webkit-text-stroke-color: var(--accent) !important;
+  transform: scale(1.02);
+}
+
+.step-card {
+  transition: transform .22s cubic-bezier(.16, 1, .3, 1), box-shadow .22s cubic-bezier(.16, 1, .3, 1);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, .35);
+}
+
+.step-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 0 var(--accent);
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -28px;
+  }
+}
+
+.timeline-track {
+  animation: dashFlow 1.8s linear infinite;
+}
+
+/* ── 04 — Sharhlar: Review Card Interactivity ── */
+.review-card {
+  margin: 0;
+  background: var(--surface);
+  border: 1.5px solid var(--ink);
+  border-radius: 12px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .22s cubic-bezier(.16, 1, .3, 1), box-shadow .22s cubic-bezier(.16, 1, .3, 1);
+}
+
+.review-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--accent), 7px 7px 0 var(--ink);
+}
+
+/* ── 05 — Ustalar uchun: Ticket Animations ── */
+@keyframes ticketFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.ticket-anim {
+  animation: ticketFloat 4.5s ease-in-out infinite;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.ticket-anim:hover {
+  animation-play-state: paused;
+  transform: translateY(-8px) rotate(-0.5deg);
+}
+
+@keyframes liveRadar {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 31, .75);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 90, 31, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 31, 0);
+  }
+}
+
+.live-radar-dot {
+  animation: liveRadar 1.8s infinite cubic-bezier(.4, 0, .6, 1);
+}
+
+@keyframes stampPop {
+  0% {
+    opacity: 0;
+    transform: scale(1.4) rotate(12deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.95) rotate(-6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-6deg);
+  }
+}
+
+.stamp-anim {
+  animation: stampPop .35s cubic-bezier(.16, 1, .3, 1) forwards;
+}
+
+/* ── Responsive Grids & Layout Utilities ── */
+.responsive-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.katalog-header {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1.2fr) minmax(0, 1fr) 200px 52px;
+  gap: 24px;
+  padding: 0 20px 14px;
+}
+
+.katalog-row {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1.2fr) minmax(0, 1fr) 200px 52px;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 20px;
+  border-top: 1.5px solid var(--ink);
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.katalog-row:hover {
+  background: var(--ink);
+  color: var(--bg-main);
+}
+
+.katalog-row:hover .mu {
+  color: #A9B0BA;
+}
+
+/* ── Mobile Breakpoints (< 860px) ── */
+@media (max-width: 860px) {
+  .desktop-nav,
+  .desktop-city {
+    display: none !important;
+  }
+
+  .mobile-burger {
+    display: flex !important;
+  }
+
+  .responsive-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  .timeline-track-svg {
+    display: none !important;
+  }
+}
+
+/* ── Mobile Phone Breakpoint (< 640px) ── */
+@media (max-width: 640px) {
+  .sticky-desktop {
+    position: static !important;
+    align-self: stretch !important;
+  }
+
+  .responsive-grid-3 {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .katalog-header {
+    display: none !important;
+  }
+
+  .katalog-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    padding: 20px 16px !important;
+  }
+
+  .katalog-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .katalog-row-ruler {
+    width: 100% !important;
+  }
+
+  .katalog-row-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(20, 24, 31, .2);
+  }
+
+  .ticket-anim {
+    animation: none !important;
+  }
+}
+
+/* ── Ustalar uchun Hero Tickets ── */
+.tickets-container {
+  flex: 0 1 480px;
+  width: 100%;
+  max-width: 480px;
+  min-width: 0;
+  position: relative;
+  height: 440px;
+}
+
+.ticket-card-1 {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: min(380px, 92vw);
+  background: #F2EEE5;
+  color: #14181F;
+  border-radius: 14px;
+  padding: 20px;
+  transform: rotate(-3deg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, .35);
+  box-sizing: border-box;
+}
+
+.ticket-card-2 {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: min(380px, 92vw);
+  background: #F2EEE5;
+  color: #14181F;
+  border-radius: 14px;
+  padding: 20px;
+  transform: rotate(2deg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, .35);
+  box-sizing: border-box;
+}
+
+.ticket-card-3 {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 240px;
+  max-width: 410px;
+  width: calc(100% - 20px);
+  background: #F2EEE5;
+  color: #14181F;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .45);
+  border: 2px solid var(--accent);
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .tickets-container {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    position: static !important;
+  }
+
+  .ticket-card-1,
+  .ticket-card-2,
+  .ticket-card-3 {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plan,
+  .pulse-node,
+  .timeline-track,
+  .service-card,
+  .service-icon,
+  .ticket-anim,
+  .live-radar-dot,
+  .stamp-anim,
+  .anim-fade-up {
+    animation: none !important;
+    transition: none !important;
+  }
+}
