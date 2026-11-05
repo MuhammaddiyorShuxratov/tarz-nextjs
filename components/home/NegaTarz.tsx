@@ -2,7 +2,7 @@ export default function NegaTarz() {
   return (
     <section style={{ padding: "clamp(48px, 8vw, 96px) 0" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)", display: "flex", flexWrap: "wrap", gap: "clamp(32px, 6vw, 72px)", alignItems: "flex-start" }}>
-        <div className="sticky-desktop" style={{ flex: "1 1 340px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px", position: "sticky", top: "100px", alignSelf: "flex-start" }}>
+        <div className="sticky-sidebar" style={{ flex: "1 1 340px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px" }}>
           <span className="m" style={{ fontSize: "13px", fontWeight: "600", letterSpacing: ".08em", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "8px", color: "#10152B" }}>
             <span style={{ width: "14px", height: "2px", background: "#10152B" }} />
             03 · Nega Tarz?

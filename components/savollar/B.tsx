@@ -2,7 +2,7 @@ export default function B() {
   return (
     <section id="b" style={{ padding: "clamp(32px, 6vw, 48px) 0 40px" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)", display: "flex", flexWrap: "wrap", gap: "clamp(28px, 4vw, 64px)", alignItems: "flex-start" }}>
-        <div className="sticky-desktop" style={{ flex: "1 1 280px", minWidth: "0", display: "flex", flexDirection: "column", gap: "14px", position: "sticky", top: "100px", alignSelf: "flex-start" }}>
+        <div className="sticky-sidebar" style={{ flex: "1 1 280px", minWidth: "0", display: "flex", flexDirection: "column", gap: "14px" }}>
           <span className="d" style={{ fontSize: "clamp(64px, 12vw, 120px)", lineHeight: ".8", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #10152B" }}>
             B
           </span>
@@ -14,7 +14,7 @@ export default function B() {
           </span>
         </div>
         <div style={{ flex: "2 1 640px", minWidth: "0", display: "flex", flexDirection: "column", borderBottom: "1.5px solid #10152B" }}>
-          <details open className="q">
+          <details open className="q" name="faq-section-b">
             <summary>
               <span className="n">
                 09
@@ -30,7 +30,7 @@ export default function B() {
               Har bir usta ro’yxatdan o’tishda shaxsini tasdiqlovchi hujjatlarini topshiradi. Tekshiruvdan o’tmagan usta buyurtma qabul qila olmaydi. Mijozlar bahosi va sharhi usta profilida ochiq ko’rinadi.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-b">
             <summary>
               <span className="n">
                 10
@@ -46,7 +46,7 @@ export default function B() {
               Tarz mijozlar xizmatiga yozing. Usta kelmasa, boshqa ishonchli ustani tavsiya qilamiz. Ish sifatsiz chiqsa, masalani usta bilan birga hal qilamiz. Tajribangizni sharhda ham qoldirishingiz mumkin.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-b">
             <summary>
               <span className="n">
                 11
@@ -62,7 +62,7 @@ export default function B() {
               Ha. Sharhni faqat buyurtmasi bajarilgan mijoz qoldiradi. Sharh mijoz ismi, tumani, xizmat turi va bahosi bilan chiqadi. Tarz o’z sharhlarini yozmaydi.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-b">
             <summary>
               <span className="n">
                 12

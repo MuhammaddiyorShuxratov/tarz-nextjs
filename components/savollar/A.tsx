@@ -2,7 +2,7 @@ export default function A() {
   return (
     <section id="a" style={{ padding: "clamp(48px, 8vw, 88px) 0 40px" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)", display: "flex", flexWrap: "wrap", gap: "clamp(28px, 4vw, 64px)", alignItems: "flex-start" }}>
-        <div className="sticky-desktop" style={{ flex: "1 1 280px", minWidth: "0", display: "flex", flexDirection: "column", gap: "14px", position: "sticky", top: "100px", alignSelf: "flex-start" }}>
+        <div className="sticky-sidebar" style={{ flex: "1 1 280px", minWidth: "0", display: "flex", flexDirection: "column", gap: "14px" }}>
           <span className="d" style={{ fontSize: "clamp(64px, 12vw, 120px)", lineHeight: ".8", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #10152B" }}>
             A
           </span>
@@ -14,7 +14,7 @@ export default function A() {
           </span>
         </div>
         <div style={{ flex: "2 1 640px", minWidth: "0", display: "flex", flexDirection: "column", borderBottom: "1.5px solid #10152B" }}>
-          <details open className="q">
+          <details open className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 01
@@ -30,7 +30,7 @@ export default function A() {
               Yo’q, Tarz mijoz uchun bepul. Buyurtma qoldirasiz, tekshirilgan ustalar narx taklif qiladi. Takliflarni solishtirib, ma’qulini o’zingiz tanlaysiz. Buyurtma berish, narx olish va maslahat uchun pul to’lamaysiz.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 02
@@ -46,7 +46,7 @@ export default function A() {
               Uch qadam bor. Avval Telegram’da ishingizni 2 daqiqada yozasiz. Keyin tekshirilgan ustalar narx taklif qiladi. Oxirida narxi va sharhiga qarab eng yaxshisini tanlaysiz. Alohida ilova yuklash shart emas.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 03
@@ -62,7 +62,7 @@ export default function A() {
               Birinchi takliflar odatda 10–30 daqiqada keladi. Shoshilinch ishda usta 2 soat ichida yetib borishi mumkin. Aniq vaqt tumaningizga va ustaning bandligiga bog’liq. Tezroq kerak bo’lsa, buyurtmada shuni yozing.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 04
@@ -78,7 +78,7 @@ export default function A() {
               Yo’q. Tarz Telegram ichida ochiladi, alohida ilova yuklash shart emas. “Usta topish” tugmasini bosasiz, buyurtma oynasi ochiladi. Telegram o’rnatilmagan bo’lsa, uni yuklab olish havolasini ko’rsatamiz.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 05
@@ -94,7 +94,7 @@ export default function A() {
               Tarz Toshkent shahri bo’ylab ishlaydi. Buyurtmada tumaningizni tanlaysiz, shu atrofdagi ustalar taklif yuboradi. Yaqin atrofdagi usta tezroq yetib keladi. Boshqa shaharlar keyingi bosqichda qo’shiladi.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 06
@@ -110,7 +110,7 @@ export default function A() {
               Narxni usta o’zi yozadi. Siz bir nechta taklifni yonma-yon ko’rasiz va ma’qulini tanlaysiz. Sahifalardagi narx oraliqlari faqat taxminiy yo’l-yo’riq. Aniq narx ishingizga qarab, usta taklifida chiqadi.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 07
@@ -126,7 +126,7 @@ export default function A() {
               Yo’q, bular taxminiy oraliqlar. Aniq narx ish hajmiga, materialga va usta tajribasiga bog’liq. Aniq narxni ustalar buyurtmangizga qarab taklif qiladi. Buyurtma qoldirish bepul.
             </p>
           </details>
-          <details className="q">
+          <details className="q" name="faq-section-a">
             <summary>
               <span className="n">
                 08

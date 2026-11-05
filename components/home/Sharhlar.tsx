@@ -53,22 +53,24 @@ export default function Sharhlar() {
                   ★★★★★
                 </span>
               </div>
-              <blockquote style={{ margin: "0", fontSize: "clamp(16px, 2vw, 18px)", lineHeight: "1.55", fontWeight: "500", color: "#10152B", flex: "1" }}>
+              <blockquote style={{ margin: "0", fontSize: "clamp(15px, 2.2vw, 18px)", lineHeight: "1.55", fontWeight: "500", color: "#10152B", flex: "1" }}>
                 {r.quote}
               </blockquote>
-              <figcaption style={{ marginTop: "auto", display: "flex", alignItems: "center", gap: "12px", paddingTop: "16px", borderTop: "1px solid #E2E8F0" }}>
-                <span style={{ width: "42px", height: "42px", borderRadius: "50%", background: "#10152B", color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700", fontSize: "16px", flexShrink: 0 }}>
-                  {r.initial}
-                </span>
-                <span style={{ display: "flex", flexDirection: "column", flex: "1", minWidth: "0" }}>
-                  <strong style={{ fontSize: "15px", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    {r.author}
-                  </strong>
-                  <span className="m" style={{ fontSize: "11px", color: "#5F6B88", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    {r.district} · {r.service}
+              <figcaption style={{ marginTop: "auto", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px", paddingTop: "14px", borderTop: "1px solid #E2E8F0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0, flex: "1" }}>
+                  <span style={{ width: "38px", height: "38px", borderRadius: "50%", background: "#10152B", color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700", fontSize: "15px", flexShrink: 0 }}>
+                    {r.initial}
                   </span>
-                </span>
-                <span className="m" style={{ fontSize: "10px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", border: "1px solid #2E5BFF", borderRadius: "6px", padding: "3px 6px", textTransform: "uppercase", flexShrink: 0 }}>
+                  <span style={{ display: "flex", flexDirection: "column", minWidth: 0 }}>
+                    <strong style={{ fontSize: "15px", color: "#10152B", lineHeight: "1.2" }}>
+                      {r.author}
+                    </strong>
+                    <span className="m" style={{ fontSize: "12px", color: "#5F6B88", lineHeight: "1.3", marginTop: "2px" }}>
+                      {r.district} · {r.service}
+                    </span>
+                  </span>
+                </div>
+                <span className="m" style={{ fontSize: "10px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", border: "1px solid #2E5BFF", borderRadius: "6px", padding: "3px 7px", textTransform: "uppercase", flexShrink: 0, whiteSpace: "nowrap" }}>
                   ✓ Bajarildi
                 </span>
               </figcaption>
