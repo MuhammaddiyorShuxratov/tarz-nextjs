@@ -16,7 +16,7 @@ export default function QisqaQadamlar() {
           </h2>
           <Link href="/qanday-ishlaydi" style={{ fontWeight: "700", fontSize: "16px", display: "inline-flex", alignItems: "center", gap: "8px", borderBottom: "2px solid var(--accent)", paddingBottom: "4px" }}>
             Batafsil o’qish
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
           </Link>
@@ -31,10 +31,10 @@ export default function QisqaQadamlar() {
                 display: "flex",
                 flexDirection: "column",
                 gap: "10px",
-                background: "#FBFAF6",
-                border: "1.5px solid #14181F",
+                background: "#FFFFFF",
+                border: "1.5px solid #10152B",
                 borderRadius: "12px",
-                boxShadow: "3px 3px 0 #14181F",
+                boxShadow: "3px 3px 0 #10152B",
               }}
             >
               <span className="m" style={{ fontSize: "13px", fontWeight: "700", color: "var(--accent)" }}>
@@ -43,7 +43,7 @@ export default function QisqaQadamlar() {
               <strong className="d" style={{ fontSize: "24px", letterSpacing: "-0.02em" }}>
                 {st.title}
               </strong>
-              <span style={{ fontSize: "16px", lineHeight: "1.5", color: "#5A5F69" }}>
+              <span style={{ fontSize: "16px", lineHeight: "1.5", color: "#5F6B88" }}>
                 {st.desc}
               </span>
             </div>

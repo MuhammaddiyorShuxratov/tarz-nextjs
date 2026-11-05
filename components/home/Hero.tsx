@@ -2,7 +2,7 @@ import PlanCard from "./PlanCard";
 
 export default function Hero() {
   return (
-    <section className="gb" style={{ borderBottom: "1px solid #14181F" }}>
+    <section className="gb" style={{ borderBottom: "1px solid #10152B" }}>
       <div
         style={{
           maxWidth: "1280px",
@@ -27,10 +27,10 @@ export default function Hero() {
               fontWeight: "600",
               letterSpacing: ".08em",
               textTransform: "uppercase",
-              border: "1px solid #14181F",
+              border: "1px solid #10152B",
               padding: "6px 14px",
               borderRadius: "999px",
-              background: "#FBFAF6",
+              background: "#FFFFFF",
               boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
             }}
           >
@@ -71,12 +71,12 @@ export default function Hero() {
             aria-label="Taxminan 2 soat ichida"
             style={{ maxWidth: "520px", height: "auto" }}
           >
-            <g stroke="#14181F" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <g stroke="#10152B" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path d="M2 18H190M330 18H518" />
               <path d="M2 7V29M518 7V29" />
               <path d="M13 12 2 18l11 6M507 12l11 6-11 6" />
             </g>
-            <text x="260" y="23" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontSize="15" fontWeight="600" fill="#14181F">
+            <text x="260" y="23" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontSize="15" fontWeight="600" fill="#10152B">
               ≈ 2 soat ichida
             </text>
           </svg>
@@ -88,7 +88,7 @@ export default function Hero() {
               margin: "0",
               fontSize: "clamp(17px, 2.5vw, 21px)",
               lineHeight: "1.5",
-              color: "#5A5F69",
+              color: "#5F6B88",
               maxWidth: "520px",
             }}
           >
@@ -98,28 +98,32 @@ export default function Hero() {
           {/* Action CTAs */}
           <div className="anim-fade-up anim-delay-3" style={{ display: "flex", gap: "12px", flexWrap: "wrap", width: "100%" }}>
             <a
-              href="#xizmatlar"
+              href="https://t.me/tarz_usta_bot"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn hb"
               style={{
                 background: "var(--accent)",
-                color: "#14181F",
-                border: "1.5px solid #14181F",
-                boxShadow: "0 3px 0 #14181F",
+                color: "#FFFFFF",
+                border: "1.5px solid #10152B",
+                boxShadow: "0 3px 0 #10152B",
               }}
             >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="2.2" strokeLinejoin="round" strokeLinecap="round" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.2" strokeLinejoin="round" strokeLinecap="round" aria-hidden="true">
                 <path d="M21 4 3 11l6 2 2 7 3-4 5 4z" />
               </svg>
               <span>Usta topish</span>
             </a>
             <a
-              href="/ustalar-uchun"
+              href="https://t.me/tarz_usta_bot"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn hb"
               style={{
-                border: "1.5px solid #14181F",
-                background: "#FBFAF6",
-                color: "#14181F",
-                boxShadow: "0 3px 0 #14181F",
+                border: "1.5px solid #10152B",
+                background: "#FFFFFF",
+                color: "#10152B",
+                boxShadow: "0 3px 0 #10152B",
               }}
             >
               Men ustaman
@@ -138,23 +142,23 @@ export default function Hero() {
               flexWrap: "wrap",
               fontSize: "clamp(12px, 2.5vw, 13px)",
               fontWeight: "600",
-              color: "#14181F",
+              color: "#10152B",
             }}
           >
             <li style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B5D66" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E5BFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12l5 5 9-10" />
               </svg>
               Bepul xizmat
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B5D66" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E5BFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12l5 5 9-10" />
               </svg>
               Telegram ichida
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B5D66" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E5BFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12l5 5 9-10" />
               </svg>
               Hujjat bilan tekshirilgan

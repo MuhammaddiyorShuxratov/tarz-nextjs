@@ -46,7 +46,7 @@ const SERVICES_DATA: ServiceData[] = [
       { name: "Isitish va suv tarmog’i", price: 150000 },
     ],
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z" />
       </svg>
     ),
@@ -69,7 +69,7 @@ const SERVICES_DATA: ServiceData[] = [
       { name: "Avtomat va elektr shit", price: 60000 },
     ],
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
       </svg>
     ),
@@ -92,7 +92,7 @@ const SERVICES_DATA: ServiceData[] = [
       { name: "Oshxona fartuk va mozaika", price: 120000 },
     ],
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="8" height="8" rx="1" />
         <rect x="13" y="3" width="8" height="8" rx="1" />
         <rect x="3" y="13" width="8" height="8" rx="1" />
@@ -118,7 +118,7 @@ const SERVICES_DATA: ServiceData[] = [
       { name: "To’liq tom va izolyatsiya", price: 110000 },
     ],
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 12 12 4l9 8M6 10v10h12V10" />
       </svg>
     ),
@@ -141,7 +141,7 @@ const SERVICES_DATA: ServiceData[] = [
       { name: "Gipsokarton va tekislash", price: 50000 },
     ],
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="15" height="6" rx="1" />
         <path d="M18 6h3v6H11v3" />
         <rect x="9" y="15" width="4" height="6" rx="1" />
@@ -166,9 +166,9 @@ const SERVICES_DATA: ServiceData[] = [
       { name: "Plastik deraza o’rnatish", price: 300000 },
     ],
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="5" y="2" width="14" height="20" rx="1" />
-        <circle cx="15" cy="12" r="1.5" fill="#14181F" />
+        <circle cx="15" cy="12" r="1.5" fill="#10152B" />
       </svg>
     ),
   },
@@ -203,7 +203,7 @@ function InteractivePriceRuler({
         style={{ overflow: "visible", display: "block", cursor: "pointer" }}
       >
         {/* Precision ruler baseline */}
-        <line x1="0" y1="13" x2="300" y2="13" stroke="#14181F" strokeWidth="1.5" strokeOpacity="0.25" strokeLinecap="round" />
+        <line x1="0" y1="13" x2="300" y2="13" stroke="#10152B" strokeWidth="1.5" strokeOpacity="0.25" strokeLinecap="round" />
         
         {/* Tick marks */}
         {ticks.map((x, i) => {
@@ -216,7 +216,7 @@ function InteractivePriceRuler({
               y1={13 - h / 2}
               x2={x}
               y2={13 + h / 2}
-              stroke="#14181F"
+              stroke="#10152B"
               strokeWidth={isMajor ? 1.4 : 1}
               strokeOpacity={isMajor ? 0.45 : 0.25}
             />
@@ -232,14 +232,14 @@ function InteractivePriceRuler({
           height="18"
           rx="4"
           fill="var(--accent)"
-          stroke="#14181F"
+          stroke="#10152B"
           strokeWidth="1.5"
           style={{ transition: "all .25s cubic-bezier(.16,1,.3,1)" }}
         />
 
         {/* Grip dots */}
-        <circle cx={barLeft + barWidth / 2 - 4} cy="13" r="1.8" fill="#14181F" />
-        <circle cx={barLeft + barWidth / 2 + 4} cy="13" r="1.8" fill="#14181F" />
+        <circle cx={barLeft + barWidth / 2 - 4} cy="13" r="1.8" fill="#10152B" />
+        <circle cx={barLeft + barWidth / 2 + 4} cy="13" r="1.8" fill="#10152B" />
       </svg>
 
       {/* 3 Interactive Tier Clickers */}
@@ -255,8 +255,8 @@ function InteractivePriceRuler({
                 onSelectTier(idx as 0 | 1 | 2);
               }}
               style={{
-                background: on ? "#14181F" : "transparent",
-                color: on ? "#F2EEE5" : "#5A5F69",
+                background: on ? "#10152B" : "transparent",
+                color: on ? "#FFFFFF" : "#5F6B88",
                 border: "none",
                 borderRadius: "4px",
                 padding: "2px 6px",
@@ -278,7 +278,7 @@ function InteractivePriceRuler({
 
 export default function Xizmatlar() {
   const [filter, setFilter] = useState<FilterCategory>("barchasi");
-  const [selectedServiceId, setSelectedServiceId] = useState<string>("santexnik");
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
   const [selectedTaskIndex, setSelectedTaskIndex] = useState<Record<string, number>>({
     santexnik: 0,
     elektrik: 0,
@@ -310,7 +310,7 @@ export default function Xizmatlar() {
   });
 
   const handleCardClick = (id: string) => {
-    setSelectedServiceId(id);
+    setSelectedServiceId((prev) => (prev === id ? null : id));
   };
 
   const handleSelectSubTask = (serviceId: string, idx: number, tier: 0 | 1 | 2) => {
@@ -357,14 +357,14 @@ export default function Xizmatlar() {
         {/* Section Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: "24px", flexWrap: "wrap" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px", maxWidth: "680px" }}>
-            <span className="m" style={{ fontSize: "13px", fontWeight: "600", letterSpacing: ".08em", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "8px", color: "#14181F" }}>
-              <span style={{ width: "14px", height: "2px", background: "#14181F" }} />
+            <span className="m" style={{ fontSize: "13px", fontWeight: "600", letterSpacing: ".08em", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "8px", color: "#10152B" }}>
+              <span style={{ width: "14px", height: "2px", background: "#10152B" }} />
               01 · Xizmatlar
             </span>
             <h2 className="d" style={{ margin: "0", fontSize: "clamp(32px, 7vw, 64px)", lineHeight: "1", letterSpacing: "-0.035em", fontWeight: "800" }}>
               Qaysi usta kerak?
             </h2>
-            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 19px)", lineHeight: "1.5", color: "#5A5F69" }}>
+            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 19px)", lineHeight: "1.5", color: "#5F6B88" }}>
               Ish turini tanlang. Chizg’ichni bosib yoki pastdagi ishlarni tanlab taxminiy narxni hisoblang.
             </p>
           </div>
@@ -430,9 +430,9 @@ export default function Xizmatlar() {
                   type="button"
                   onClick={() => setFilter(tab.key as FilterCategory)}
                   style={{
-                    background: active ? "#14181F" : "#FBFAF6",
-                    color: active ? "#F2EEE5" : "#14181F",
-                    border: "1.5px solid #14181F",
+                    background: active ? "#10152B" : "#FFFFFF",
+                    color: active ? "#FFFFFF" : "#10152B",
+                    border: "1.5px solid #10152B",
                     borderRadius: "999px",
                     padding: "8px 16px",
                     fontSize: "13px",
@@ -471,11 +471,11 @@ export default function Xizmatlar() {
                 className="service-card"
                 style={{
                   cursor: "pointer",
-                  borderColor: isSelected ? "#14181F" : "#14181F",
+                  borderColor: isSelected ? "#10152B" : "#10152B",
                   boxShadow: isSelected
-                    ? "6px 6px 0 var(--accent), 0 0 16px rgba(255, 90, 31, 0.2)"
-                    : "4px 4px 0 #14181F",
-                  background: isSelected ? "#FFFFFF" : "#FBFAF6",
+                    ? "6px 6px 0 var(--accent), 0 0 16px rgba(46, 91, 255, 0.2)"
+                    : "4px 4px 0 #10152B",
+                  background: isSelected ? "#FFFFFF" : "#FFFFFF",
                   position: "relative",
                   gap: "16px",
                 }}
@@ -483,11 +483,11 @@ export default function Xizmatlar() {
                 {/* Top bar: Number, Icon, and Active Selection Badge */}
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <span className="m" style={{ fontSize: "13px", fontWeight: "700", color: "#5A5F69" }}>
+                    <span className="m" style={{ fontSize: "13px", fontWeight: "700", color: "#5F6B88" }}>
                       {s.num}
                     </span>
                     {isSelected && (
-                      <span className="m" style={{ fontSize: "10px", fontWeight: "800", color: "#0B5D66", background: "#D3E6E3", padding: "2px 8px", borderRadius: "999px" }}>
+                      <span className="m" style={{ fontSize: "10px", fontWeight: "800", color: "#2E5BFF", background: "#EBF1FF", padding: "2px 8px", borderRadius: "999px" }}>
                         ✓ TANLANDI
                       </span>
                     )}
@@ -499,10 +499,10 @@ export default function Xizmatlar() {
 
                 {/* Title & Description */}
                 <div>
-                  <div className="d" style={{ fontSize: "30px", fontWeight: "800", letterSpacing: "-0.03em", color: "#14181F" }}>
+                  <div className="d" style={{ fontSize: "30px", fontWeight: "800", letterSpacing: "-0.03em", color: "#10152B" }}>
                     {s.title}
                   </div>
-                  <div style={{ fontSize: "14px", color: "#5A5F69", marginTop: "2px" }}>
+                  <div style={{ fontSize: "14px", color: "#5F6B88", marginTop: "2px" }}>
                     {s.sub}
                   </div>
                 </div>
@@ -522,7 +522,7 @@ export default function Xizmatlar() {
 
                 {/* Sub-services clickable chips */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                  <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#5A5F69", textTransform: "uppercase", letterSpacing: ".06em" }}>
+                  <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#5F6B88", textTransform: "uppercase", letterSpacing: ".06em" }}>
                     Mashhur ishlar:
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
@@ -542,18 +542,18 @@ export default function Xizmatlar() {
                             justifyContent: "space-between",
                             padding: "6px 10px",
                             borderRadius: "8px",
-                            border: on ? "1.5px solid #14181F" : "1px solid #E2DCCF",
-                            background: on ? "#D3E6E3" : "#FBFAF6",
+                            border: on ? "1.5px solid #10152B" : "1px solid #E2E8F0",
+                            background: on ? "#EBF1FF" : "#FFFFFF",
                             fontSize: "12px",
                             cursor: "pointer",
                             textAlign: "left",
                             transition: "all .12s ease",
                           }}
                         >
-                          <span style={{ fontWeight: on ? "700" : "500", color: "#14181F" }}>
+                          <span style={{ fontWeight: on ? "700" : "500", color: "#10152B" }}>
                             {on ? "● " : "○ "} {task.name}
                           </span>
-                          <strong className="m" style={{ fontSize: "11px", color: on ? "#0B5D66" : "#5A5F69" }}>
+                          <strong className="m" style={{ fontSize: "11px", color: on ? "#2E5BFF" : "#5F6B88" }}>
                             {fmt(task.price)} so’m
                           </strong>
                         </button>
@@ -568,14 +568,14 @@ export default function Xizmatlar() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    background: "#F5F1E8",
+                    background: "#F4F7FD",
                     padding: "8px 12px",
                     borderRadius: "10px",
-                    border: "1px solid #E2DCCF",
+                    border: "1px solid #E2E8F0",
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <span className="m" style={{ fontSize: "11px", color: "#5A5F69" }}>Hajm:</span>
+                    <span className="m" style={{ fontSize: "11px", color: "#5F6B88" }}>Hajm:</span>
                     <button
                       type="button"
                       onClick={(e) => {
@@ -586,7 +586,7 @@ export default function Xizmatlar() {
                         width: "24px",
                         height: "24px",
                         borderRadius: "6px",
-                        border: "1px solid #14181F",
+                        border: "1px solid #10152B",
                         background: "#FFFFFF",
                         cursor: "pointer",
                         fontWeight: "700",
@@ -610,7 +610,7 @@ export default function Xizmatlar() {
                         width: "24px",
                         height: "24px",
                         borderRadius: "6px",
-                        border: "1px solid #14181F",
+                        border: "1px solid #10152B",
                         background: "#FFFFFF",
                         cursor: "pointer",
                         fontWeight: "700",
@@ -625,8 +625,8 @@ export default function Xizmatlar() {
 
                   {/* Calculated sum */}
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-                    <span className="m" style={{ fontSize: "10px", color: "#5A5F69" }}>Taxminiy jami:</span>
-                    <strong className="m" style={{ fontSize: "14px", color: "#0B5D66", fontWeight: "800" }}>
+                    <span className="m" style={{ fontSize: "10px", color: "#5F6B88" }}>Taxminiy jami:</span>
+                    <strong className="m" style={{ fontSize: "14px", color: "#2E5BFF", fontWeight: "800" }}>
                       {fmt(calculatedTotal)} so’m
                     </strong>
                   </div>
@@ -639,13 +639,13 @@ export default function Xizmatlar() {
                     e.stopPropagation();
                     handleTransferToOrder(s);
                   }}
-                  className="hb"
+                  className="hb service-cta-btn"
                   style={{
                     height: "42px",
                     borderRadius: "10px",
-                    background: isSelected ? "var(--accent)" : "#14181F",
-                    color: isSelected ? "#14181F" : "#F2EEE5",
-                    border: "1.5px solid #14181F",
+                    background: isSelected ? "var(--accent)" : "#10152B",
+                    color: "#FFFFFF",
+                    border: "1.5px solid #10152B",
                     fontWeight: "700",
                     fontSize: "13px",
                     display: "flex",
@@ -654,7 +654,7 @@ export default function Xizmatlar() {
                     gap: "6px",
                     cursor: "pointer",
                     width: "100%",
-                    boxShadow: "0 2px 0 #14181F",
+                    boxShadow: "0 2px 0 #10152B",
                     transition: "all .15s ease",
                   }}
                 >

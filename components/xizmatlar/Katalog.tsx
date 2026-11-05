@@ -25,7 +25,7 @@ export default function Katalog() {
     <section style={{ padding: "clamp(48px, 7vw, 72px) 0 clamp(56px, 8vw, 88px)" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)" }}>
         {/* Table Header (Hidden on Mobile) */}
-        <div className="m katalog-header" style={{ fontSize: "12px", fontWeight: "600", letterSpacing: ".1em", textTransform: "uppercase", color: "#5A5F69" }}>
+        <div className="m katalog-header" style={{ fontSize: "12px", fontWeight: "600", letterSpacing: ".1em", textTransform: "uppercase", color: "#5F6B88" }}>
           <span>№</span>
           <span>Xizmat</span>
           <span>Narx oralig’i (0–320 000 so’m)</span>
@@ -34,7 +34,7 @@ export default function Katalog() {
         </div>
 
         {/* Rows List */}
-        <div style={{ borderBottom: "1.5px solid #14181F" }}>
+        <div style={{ borderBottom: "1.5px solid #10152B" }}>
           {ITEMS.map((item) => (
             <Link key={item.num} href={item.href} className="katalog-row">
               {/* Top info for mobile / columns for desktop */}
@@ -46,7 +46,7 @@ export default function Katalog() {
                 <div className="d" style={{ fontSize: "clamp(26px, 4vw, 38px)", fontWeight: "700", letterSpacing: "-0.03em", lineHeight: "1.1" }}>
                   {item.title}
                 </div>
-                <div className="mu" style={{ fontSize: "15px", color: "#5A5F69", marginTop: "4px" }}>
+                <div className="mu" style={{ fontSize: "15px", color: "#5F6B88", marginTop: "4px" }}>
                   {item.sub}
                 </div>
               </div>
@@ -63,14 +63,14 @@ export default function Katalog() {
                 <strong className="m" style={{ fontSize: "15px" }}>
                   {item.price}
                 </strong>
-                <div className="m mu" style={{ fontSize: "12px", color: "#5A5F69", marginTop: "2px" }}>
+                <div className="m mu" style={{ fontSize: "12px", color: "#5F6B88", marginTop: "2px" }}>
                   {item.unit}
                 </div>
               </div>
 
               {/* Arrow action button */}
-              <span style={{ width: "46px", height: "46px", borderRadius: "50%", background: "var(--accent)", color: "#14181F", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <span style={{ width: "46px", height: "46px", borderRadius: "50%", background: "var(--accent)", color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
               </span>

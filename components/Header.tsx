@@ -31,12 +31,12 @@ export default function Header() {
         position: "sticky",
         top: 0,
         zIndex: 100,
-        background: "rgba(242, 238, 229, 0.94)",
+        background: "rgba(255, 255, 255, 0.94)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1.5px solid #14181F",
+        borderBottom: "1.5px solid #10152B",
         fontFamily: "'Inter Tight', system-ui, sans-serif",
-        color: "#14181F",
+        color: "#10152B",
         transition: "all .2s ease",
       }}
     >
@@ -53,10 +53,12 @@ export default function Header() {
         }}
       >
         {/* Logo */}
-        <Link href="/" aria-label="Tarz bosh sahifa" style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-          <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: "clamp(26px, 5vw, 32px)", fontWeight: "800", letterSpacing: "-0.05em", lineHeight: "1" }}>
-            Tarz
-          </span>
+        <Link href="/" aria-label="Tarz bosh sahifa" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+          <img
+            src="/logo.png"
+            alt="Tarz"
+            style={{ height: "34px", width: "auto", display: "block" }}
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -72,7 +74,7 @@ export default function Header() {
                   padding: "8px 14px",
                   fontSize: "15px",
                   fontWeight: on ? "700" : "600",
-                  color: on ? "#14181F" : "#5A5F69",
+                  color: on ? "#10152B" : "#5F6B88",
                   borderBottom: on ? "2.5px solid var(--accent)" : "2.5px solid transparent",
                   transition: "all .15s ease",
                 }}
@@ -95,15 +97,17 @@ export default function Header() {
               display: "flex",
               alignItems: "center",
               gap: "6px",
-              color: "#5A5F69",
+              color: "#5F6B88",
             }}
           >
-            <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#0B5D66" }} />
+            <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#2E5BFF" }} />
             Toshkent
           </span>
 
-          <Link
-            href="#xizmatlar"
+          <a
+            href="https://t.me/tarz_usta_bot"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hb"
             style={{
               display: "inline-flex",
@@ -113,16 +117,16 @@ export default function Header() {
               padding: "0 clamp(14px, 3vw, 20px)",
               borderRadius: "10px",
               background: "var(--accent)",
-              color: "#14181F",
+              color: "#FFFFFF",
               fontWeight: "700",
               fontSize: "14px",
-              border: "1.5px solid #14181F",
-              boxShadow: "0 2px 0 #14181F",
+              border: "1.5px solid #10152B",
+              boxShadow: "0 2px 0 #10152B",
               whiteSpace: "nowrap",
             }}
           >
             Usta topish
-          </Link>
+          </a>
 
           {/* Mobile Menu Toggle Button */}
           <button
@@ -134,9 +138,9 @@ export default function Header() {
               width: "44px",
               height: "44px",
               borderRadius: "10px",
-              border: "1.5px solid #14181F",
-              background: mobileMenuOpen ? "#14181F" : "#FBFAF6",
-              color: mobileMenuOpen ? "#F2EEE5" : "#14181F",
+              border: "1.5px solid #10152B",
+              background: mobileMenuOpen ? "#10152B" : "#FFFFFF",
+              color: mobileMenuOpen ? "#FFFFFF" : "#10152B",
               cursor: "pointer",
               display: "none",
               alignItems: "center",
@@ -164,9 +168,9 @@ export default function Header() {
         <div
           className="anim-fade-up"
           style={{
-            background: "#FBFAF6",
-            borderTop: "1.5px solid #14181F",
-            borderBottom: "1.5px solid #14181F",
+            background: "#FFFFFF",
+            borderTop: "1.5px solid #10152B",
+            borderBottom: "1.5px solid #10152B",
             padding: "20px 24px 28px",
             display: "flex",
             flexDirection: "column",
@@ -185,9 +189,9 @@ export default function Header() {
                   borderRadius: "8px",
                   fontSize: "16px",
                   fontWeight: on ? "700" : "600",
-                  background: on ? "#D3E6E3" : "transparent",
-                  color: "#14181F",
-                  border: on ? "1.5px solid #14181F" : "1px solid transparent",
+                  background: on ? "#EBF1FF" : "transparent",
+                  color: "#10152B",
+                  border: on ? "1.5px solid #10152B" : "1px solid transparent",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
@@ -199,19 +203,21 @@ export default function Header() {
             );
           })}
 
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: "12px", borderTop: "1px solid #D6D0C0" }}>
-            <span className="m" style={{ fontSize: "12px", color: "#5A5F69", display: "flex", alignItems: "center", gap: "6px" }}>
-              <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#0B5D66" }} />
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: "12px", borderTop: "1px solid #E2E8F0" }}>
+            <span className="m" style={{ fontSize: "12px", color: "#5F6B88", display: "flex", alignItems: "center", gap: "6px" }}>
+              <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#2E5BFF" }} />
               Toshkent bo’ylab xizmat
             </span>
-            <Link
-              href="/ustalar-uchun"
+            <a
+              href="https://t.me/tarz_usta_bot"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="m"
-              style={{ fontSize: "12px", color: "#0B5D66", fontWeight: "700" }}
+              style={{ fontSize: "12px", color: "#2E5BFF", fontWeight: "700" }}
             >
               Men ustaman →
-            </Link>
+            </a>
           </div>
         </div>
       )}

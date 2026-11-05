@@ -112,6 +112,7 @@ export default function QandayIshlaydi() {
 
   const handleTelegramContact = () => {
     setContactFeedback(`${activeOffer.name} usta bilan Telegram ochilmoqda...`);
+    window.open("https://t.me/tarz_usta_bot", "_blank", "noopener,noreferrer");
     setTimeout(() => {
       setContactFeedback(null);
     }, 3500);
@@ -137,7 +138,7 @@ export default function QandayIshlaydi() {
   }, []);
 
   return (
-    <section id="qanday-ishlaydi" style={{ background: "#101820", color: "#F2EEE5", padding: "clamp(48px, 8vw, 96px) 0" }}>
+    <section id="qanday-ishlaydi" style={{ background: "#10152B", color: "#FFFFFF", padding: "clamp(48px, 8vw, 96px) 0" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)", display: "flex", flexDirection: "column", gap: "clamp(32px, 5vw, 56px)" }}>
         
         {/* Section Header */}
@@ -165,11 +166,11 @@ export default function QandayIshlaydi() {
                   width: "44px",
                   height: "44px",
                   borderRadius: "50%",
-                  background: isSubmitted ? "#0B5D66" : "#101820",
-                  border: isSubmitted ? "2px solid #0B5D66" : "2px solid var(--accent)",
+                  background: isSubmitted ? "#2E5BFF" : "#10152B",
+                  border: isSubmitted ? "2px solid #2E5BFF" : "2px solid var(--accent)",
                   boxShadow: isSubmitted
                     ? "0 0 0 3px rgba(11, 93, 102, 0.3), 0 0 16px rgba(11, 93, 102, 0.4)"
-                    : "0 0 0 3px rgba(255, 90, 31, 0.25), 0 0 16px rgba(255, 90, 31, 0.35)",
+                    : "0 0 0 3px rgba(46, 91, 255, 0.25), 0 0 16px rgba(46, 91, 255, 0.35)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -178,7 +179,7 @@ export default function QandayIshlaydi() {
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: "14px",
                   fontWeight: "800",
-                  color: isSubmitted ? "#F2EEE5" : "var(--accent)",
+                  color: isSubmitted ? "#FFFFFF" : "var(--accent)",
                   transition: "all .3s ease",
                 }}
               >
@@ -240,10 +241,10 @@ export default function QandayIshlaydi() {
 
             {/* Time label badge */}
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "var(--accent)", background: "rgba(255,90,31,0.12)", padding: "3px 8px", borderRadius: "6px", border: "1px solid rgba(255,90,31,0.25)" }}>
+              <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "var(--accent)", background: "rgba(46,91,255,0.12)", padding: "3px 8px", borderRadius: "6px", border: "1px solid rgba(46,91,255,0.25)" }}>
                 ⚡ 2 daqiqa
               </span>
-              <span className="m" style={{ fontSize: "11px", color: "#A9B0BA" }}>
+              <span className="m" style={{ fontSize: "11px", color: "#8C9BB5" }}>
                 ariza topshirish
               </span>
             </div>
@@ -257,7 +258,7 @@ export default function QandayIshlaydi() {
                 fontWeight: "800",
                 letterSpacing: "-0.05em",
                 color: "transparent",
-                WebkitTextStroke: activeStep === 1 ? "1.5px var(--accent)" : "1.5px #F2EEE5",
+                WebkitTextStroke: activeStep === 1 ? "1.5px var(--accent)" : "1.5px #FFFFFF",
               }}
             >
               1
@@ -267,7 +268,7 @@ export default function QandayIshlaydi() {
               <h3 className="d" style={{ margin: "0", fontSize: "30px", fontWeight: "700", letterSpacing: "-0.02em" }}>
                 Buyurtma joylang
               </h3>
-              <p style={{ margin: "8px 0 0", fontSize: "16px", lineHeight: "1.5", color: "#A9B0BA" }}>
+              <p style={{ margin: "8px 0 0", fontSize: "16px", lineHeight: "1.5", color: "#8C9BB5" }}>
                 Nima kerakligini 2 daqiqada yozing.
               </p>
             </div>
@@ -276,13 +277,13 @@ export default function QandayIshlaydi() {
             <div
               className="step-card"
               style={{
-                background: "#FBFAF6",
-                color: "#14181F",
+                background: "#FFFFFF",
+                color: "#10152B",
                 borderRadius: "16px",
                 padding: "20px",
                 display: "flex",
                 flexDirection: "column",
-                border: activeStep === 1 ? "2px solid #14181F" : "1.5px solid #14181F",
+                border: activeStep === 1 ? "2px solid #10152B" : "1.5px solid #10152B",
                 marginTop: "auto",
                 minHeight: "315px",
                 justifyContent: "space-between",
@@ -295,9 +296,9 @@ export default function QandayIshlaydi() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <strong style={{ fontSize: "16px", display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>Nima kerak?</span>
-                  <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0B5D66", display: "inline-block" }} />
+                  <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#2E5BFF", display: "inline-block" }} />
                 </strong>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#14181F", background: "#E8E2D5", padding: "3px 10px", borderRadius: "999px" }}>
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#10152B", background: "#F4F7FD", padding: "3px 10px", borderRadius: "999px" }}>
                   1-BOSQICH
                 </span>
               </div>
@@ -313,9 +314,9 @@ export default function QandayIshlaydi() {
                       type="button"
                       onClick={() => handleSelectCategory(catKey)}
                       style={{
-                        background: active ? "#14181F" : "#FFFFFF",
-                        color: active ? "#F2EEE5" : "#14181F",
-                        border: active ? "1.5px solid #14181F" : "1.5px solid #D6D0C0",
+                        background: active ? "#10152B" : "#FFFFFF",
+                        color: active ? "#FFFFFF" : "#10152B",
+                        border: active ? "1.5px solid #10152B" : "1.5px solid #E2E8F0",
                         borderRadius: "999px",
                         padding: "6px 10px",
                         fontSize: "12px",
@@ -345,7 +346,7 @@ export default function QandayIshlaydi() {
                   height="16"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#5A5F69"
+                  stroke="#5F6B88"
                   strokeWidth="2.2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -364,10 +365,10 @@ export default function QandayIshlaydi() {
                     height: "42px",
                     padding: "0 34px 0 36px",
                     background: "#FFFFFF",
-                    border: "1.5px solid #14181F",
+                    border: "1.5px solid #10152B",
                     borderRadius: "10px",
                     fontSize: "13px",
-                    color: "#14181F",
+                    color: "#10152B",
                     outline: "none",
                     boxSizing: "border-box",
                     fontFamily: "'Inter Tight', system-ui, sans-serif",
@@ -406,9 +407,9 @@ export default function QandayIshlaydi() {
                     type="button"
                     onClick={() => handleChipClick(chip)}
                     style={{
-                      background: inputValue === chip ? "#E8E2D5" : "#FFFFFF",
-                      color: "#14181F",
-                      border: "1px solid #D6D0C0",
+                      background: inputValue === chip ? "#F4F7FD" : "#FFFFFF",
+                      color: "#10152B",
+                      border: "1px solid #E2E8F0",
                       borderRadius: "6px",
                       padding: "3px 8px",
                       fontSize: "11px",
@@ -430,9 +431,9 @@ export default function QandayIshlaydi() {
                 style={{
                   height: "44px",
                   borderRadius: "10px",
-                  background: isSubmitted ? "#0B5D66" : "var(--accent)",
-                  color: isSubmitted ? "#F2EEE5" : "#14181F",
-                  border: "1.5px solid #14181F",
+                  background: isSubmitted ? "#2E5BFF" : "var(--accent)",
+                  color: isSubmitted ? "#FFFFFF" : "#10152B",
+                  border: "1.5px solid #10152B",
                   fontWeight: "700",
                   fontSize: "14px",
                   display: "flex",
@@ -441,7 +442,7 @@ export default function QandayIshlaydi() {
                   gap: "8px",
                   cursor: "pointer",
                   width: "100%",
-                  boxShadow: "0 2px 0 #14181F",
+                  boxShadow: "0 2px 0 #10152B",
                   transition: "all .2s ease",
                 }}
               >
@@ -475,9 +476,9 @@ export default function QandayIshlaydi() {
                   width: "44px",
                   height: "44px",
                   borderRadius: "50%",
-                  background: "#101820",
+                  background: "#10152B",
                   border: "2px solid var(--accent)",
-                  boxShadow: "0 0 0 3px rgba(255, 90, 31, 0.25), 0 0 16px rgba(255, 90, 31, 0.35)",
+                  boxShadow: "0 0 0 3px rgba(46, 91, 255, 0.25), 0 0 16px rgba(46, 91, 255, 0.35)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -547,10 +548,10 @@ export default function QandayIshlaydi() {
 
             {/* Time label badge */}
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "var(--accent)", background: "rgba(255,90,31,0.12)", padding: "3px 8px", borderRadius: "6px", border: "1px solid rgba(255,90,31,0.25)" }}>
+              <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "var(--accent)", background: "rgba(46,91,255,0.12)", padding: "3px 8px", borderRadius: "6px", border: "1px solid rgba(46,91,255,0.25)" }}>
                 ⚡ 10–30 daqiqa
               </span>
-              <span className="m" style={{ fontSize: "11px", color: "#A9B0BA" }}>
+              <span className="m" style={{ fontSize: "11px", color: "#8C9BB5" }}>
                 takliflar tushadi
               </span>
             </div>
@@ -564,7 +565,7 @@ export default function QandayIshlaydi() {
                 fontWeight: "800",
                 letterSpacing: "-0.05em",
                 color: "transparent",
-                WebkitTextStroke: activeStep === 2 ? "1.5px var(--accent)" : "1.5px #F2EEE5",
+                WebkitTextStroke: activeStep === 2 ? "1.5px var(--accent)" : "1.5px #FFFFFF",
               }}
             >
               2
@@ -574,7 +575,7 @@ export default function QandayIshlaydi() {
               <h3 className="d" style={{ margin: "0", fontSize: "30px", fontWeight: "700", letterSpacing: "-0.02em" }}>
                 Takliflarni solishtiring
               </h3>
-              <p style={{ margin: "8px 0 0", fontSize: "16px", lineHeight: "1.5", color: "#A9B0BA" }}>
+              <p style={{ margin: "8px 0 0", fontSize: "16px", lineHeight: "1.5", color: "#8C9BB5" }}>
                 Tekshirilgan ustalar narx taklif qiladi.
               </p>
             </div>
@@ -583,26 +584,26 @@ export default function QandayIshlaydi() {
             <div
               className="step-card"
               style={{
-                background: "#FBFAF6",
-                color: "#14181F",
+                background: "#FFFFFF",
+                color: "#10152B",
                 borderRadius: "16px",
                 padding: "20px",
                 display: "flex",
                 flexDirection: "column",
-                border: activeStep === 2 ? "2px solid #14181F" : "1.5px solid #14181F",
+                border: activeStep === 2 ? "2px solid #10152B" : "1.5px solid #10152B",
                 marginTop: "auto",
                 minHeight: "315px",
                 justifyContent: "space-between",
                 boxSizing: "border-box",
-                boxShadow: isSubmitted ? "0 0 20px rgba(255, 90, 31, 0.4), 5px 5px 0 var(--accent)" : "5px 5px 0 var(--accent)",
+                boxShadow: isSubmitted ? "0 0 20px rgba(46, 91, 255, 0.4), 5px 5px 0 var(--accent)" : "5px 5px 0 var(--accent)",
                 gap: "12px",
                 transition: "all .3s ease",
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <strong style={{ fontSize: "16px" }}>Ustalar taklifi</strong>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#0B5D66", background: "#D3E6E3", padding: "3px 10px", borderRadius: "999px", display: "flex", alignItems: "center", gap: "6px" }}>
-                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#0B5D66" }} />
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", padding: "3px 10px", borderRadius: "999px", display: "flex", alignItems: "center", gap: "6px" }}>
+                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#2E5BFF" }} />
                   3 TA KELDI
                 </span>
               </div>
@@ -621,16 +622,16 @@ export default function QandayIshlaydi() {
                         alignItems: "center",
                         justifyContent: "space-between",
                         padding: "9px 12px",
-                        border: on ? "1.5px solid #14181F" : "1.5px solid #D6D0C0",
+                        border: on ? "1.5px solid #10152B" : "1.5px solid #E2E8F0",
                         borderRadius: "10px",
-                        background: on ? "#D3E6E3" : "#FFFFFF",
+                        background: on ? "#EBF1FF" : "#FFFFFF",
                         cursor: "pointer",
                         width: "100%",
                         textAlign: "left",
                         color: "inherit",
                         font: "inherit",
                         transition: "all .15s ease",
-                        boxShadow: on ? "0 2px 0 #14181F" : "none",
+                        boxShadow: on ? "0 2px 0 #10152B" : "none",
                       }}
                     >
                       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -639,8 +640,8 @@ export default function QandayIshlaydi() {
                             width: "28px",
                             height: "28px",
                             borderRadius: "50%",
-                            background: "#14181F",
-                            color: "#F2EEE5",
+                            background: "#10152B",
+                            color: "#FFFFFF",
                             display: "inline-flex",
                             alignItems: "center",
                             justifyContent: "center",
@@ -652,14 +653,14 @@ export default function QandayIshlaydi() {
                         </span>
                         <div style={{ display: "flex", flexDirection: "column" }}>
                           <strong style={{ fontSize: "14px" }}>
-                            {o.name} <span style={{ fontWeight: "400", fontSize: "12px", color: "#5A5F69" }}>· {o.role}</span>
+                            {o.name} <span style={{ fontWeight: "400", fontSize: "12px", color: "#5F6B88" }}>· {o.role}</span>
                           </strong>
-                          <span className="m" style={{ fontSize: "11px", color: on ? "#14181F" : "#5A5F69" }}>
+                          <span className="m" style={{ fontSize: "11px", color: on ? "#10152B" : "#5F6B88" }}>
                             {o.rating} {o.badge ? `· ${o.badge}` : `· ${o.reviews}`}
                           </span>
                         </div>
                       </div>
-                      <strong className="m" style={{ fontSize: "13px", color: on ? "#14181F" : "#2F3A3D" }}>
+                      <strong className="m" style={{ fontSize: "13px", color: on ? "#10152B" : "#10152B" }}>
                         {o.price}
                       </strong>
                     </button>
@@ -667,7 +668,7 @@ export default function QandayIshlaydi() {
                 })}
               </div>
 
-              <span className="m" style={{ fontSize: "11px", color: "#5A5F69", textAlign: "center" }}>
+              <span className="m" style={{ fontSize: "11px", color: "#5F6B88", textAlign: "center" }}>
                 Tanlash uchun taklif ustiga bosing →
               </span>
             </div>
@@ -684,9 +685,9 @@ export default function QandayIshlaydi() {
                   width: "44px",
                   height: "44px",
                   borderRadius: "50%",
-                  background: "#101820",
+                  background: "#10152B",
                   border: "2px solid var(--accent)",
-                  boxShadow: "0 0 0 3px rgba(255, 90, 31, 0.25), 0 0 16px rgba(255, 90, 31, 0.35)",
+                  boxShadow: "0 0 0 3px rgba(46, 91, 255, 0.25), 0 0 16px rgba(46, 91, 255, 0.35)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -704,10 +705,10 @@ export default function QandayIshlaydi() {
 
             {/* Time label badge */}
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "var(--accent)", background: "rgba(255,90,31,0.12)", padding: "3px 8px", borderRadius: "6px", border: "1px solid rgba(255,90,31,0.25)" }}>
+              <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "var(--accent)", background: "rgba(46,91,255,0.12)", padding: "3px 8px", borderRadius: "6px", border: "1px solid rgba(46,91,255,0.25)" }}>
                 ⚡ Shoshilinch ishda ≈ 2 soat
               </span>
-              <span className="m" style={{ fontSize: "11px", color: "#A9B0BA" }}>
+              <span className="m" style={{ fontSize: "11px", color: "#8C9BB5" }}>
                 manzilga yetib keladi
               </span>
             </div>
@@ -721,7 +722,7 @@ export default function QandayIshlaydi() {
                 fontWeight: "800",
                 letterSpacing: "-0.05em",
                 color: "transparent",
-                WebkitTextStroke: activeStep === 3 ? "1.5px var(--accent)" : "1.5px #F2EEE5",
+                WebkitTextStroke: activeStep === 3 ? "1.5px var(--accent)" : "1.5px #FFFFFF",
               }}
             >
               3
@@ -731,7 +732,7 @@ export default function QandayIshlaydi() {
               <h3 className="d" style={{ margin: "0", fontSize: "30px", fontWeight: "700", letterSpacing: "-0.02em" }}>
                 Ustani tanlang
               </h3>
-              <p style={{ margin: "8px 0 0", fontSize: "16px", lineHeight: "1.5", color: "#A9B0BA" }}>
+              <p style={{ margin: "8px 0 0", fontSize: "16px", lineHeight: "1.5", color: "#8C9BB5" }}>
                 Narx va sharhga qarab o’zingiz tanlaysiz.
               </p>
             </div>
@@ -740,13 +741,13 @@ export default function QandayIshlaydi() {
             <div
               className="step-card"
               style={{
-                background: "#FBFAF6",
-                color: "#14181F",
+                background: "#FFFFFF",
+                color: "#10152B",
                 borderRadius: "16px",
                 padding: "20px",
                 display: "flex",
                 flexDirection: "column",
-                border: activeStep === 3 ? "2px solid #14181F" : "1.5px solid #14181F",
+                border: activeStep === 3 ? "2px solid #10152B" : "1.5px solid #10152B",
                 marginTop: "auto",
                 minHeight: "315px",
                 justifyContent: "space-between",
@@ -757,7 +758,7 @@ export default function QandayIshlaydi() {
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <strong style={{ fontSize: "16px" }}>Tanlangan usta</strong>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#0B5D66", background: "#D3E6E3", padding: "3px 10px", borderRadius: "999px" }}>
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", padding: "3px 10px", borderRadius: "999px" }}>
                   ✓ TASDIQLANDI
                 </span>
               </div>
@@ -769,10 +770,10 @@ export default function QandayIshlaydi() {
                   alignItems: "center",
                   gap: "14px",
                   background: "#FFFFFF",
-                  border: "1.5px solid #14181F",
+                  border: "1.5px solid #10152B",
                   borderRadius: "12px",
                   padding: "12px",
-                  boxShadow: "0 2px 0 #14181F",
+                  boxShadow: "0 2px 0 #10152B",
                 }}
               >
                 <div style={{ position: "relative" }}>
@@ -781,8 +782,8 @@ export default function QandayIshlaydi() {
                       width: "44px",
                       height: "44px",
                       borderRadius: "50%",
-                      background: "#14181F",
-                      color: "#F2EEE5",
+                      background: "#10152B",
+                      color: "#FFFFFF",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -801,7 +802,7 @@ export default function QandayIshlaydi() {
                       width: "16px",
                       height: "16px",
                       borderRadius: "50%",
-                      background: "#0B5D66",
+                      background: "#2E5BFF",
                       color: "#FFFFFF",
                       display: "flex",
                       alignItems: "center",
@@ -817,18 +818,18 @@ export default function QandayIshlaydi() {
                 <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, gap: "2px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                     <strong style={{ fontSize: "15px" }}>{activeOffer.name}</strong>
-                    <span className="m" style={{ fontSize: "11px", color: "#5A5F69" }}>
+                    <span className="m" style={{ fontSize: "11px", color: "#5F6B88" }}>
                       ({currentCat.name}) · {activeOffer.rating}
                     </span>
                   </div>
-                  <span className="m" style={{ fontSize: "13px", color: "#0B5D66", fontWeight: "800" }}>
+                  <span className="m" style={{ fontSize: "13px", color: "#2E5BFF", fontWeight: "800" }}>
                     {activeOffer.price} · 2 soatda
                   </span>
                 </div>
               </div>
 
-              <div className="m" style={{ fontSize: "11px", color: "#5A5F69", display: "flex", alignItems: "center", gap: "6px" }}>
-                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#0B5D66" }} />
+              <div className="m" style={{ fontSize: "11px", color: "#5F6B88", display: "flex", alignItems: "center", gap: "6px" }}>
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#2E5BFF" }} />
                 Hujjat bilan tekshirilgan mutaxassis · 100% bepul aloqa
               </div>
 
@@ -840,9 +841,9 @@ export default function QandayIshlaydi() {
                 style={{
                   height: "44px",
                   borderRadius: "10px",
-                  background: "#0B5D66",
-                  color: "#F2EEE5",
-                  border: "1.5px solid #14181F",
+                  background: "#2E5BFF",
+                  color: "#FFFFFF",
+                  border: "1.5px solid #10152B",
                   fontWeight: "700",
                   fontSize: "14px",
                   display: "flex",
@@ -851,7 +852,7 @@ export default function QandayIshlaydi() {
                   gap: "8px",
                   cursor: "pointer",
                   width: "100%",
-                  boxShadow: "0 2px 0 #14181F",
+                  boxShadow: "0 2px 0 #10152B",
                   transition: "all .2s ease",
                 }}
               >

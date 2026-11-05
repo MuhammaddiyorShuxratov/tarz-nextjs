@@ -1,11 +1,13 @@
 :root {
-  --accent: #FF5A1F;
-  --bg-main: #F2EEE5;
-  --surface: #FBFAF6;
-  --ink: #14181F;
-  --muted: #5A5F69;
-  --teal: #0B5D66;
-  --teal-light: #D3E6E3;
+  --accent: #2E5BFF;
+  --accent-hover: #1E4AE6;
+  --bg-main: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-alt: #F4F7FD;
+  --ink: #10152B;
+  --muted: #5F6B88;
+  --teal: #2E5BFF;
+  --teal-light: #EBF1FF;
 }
 
 *, *::before, *::after {
@@ -39,15 +41,15 @@ a {
 /* ── Blueprint Grids ── */
 .gb {
   background-image:
-    linear-gradient(rgba(20, 24, 31, .06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 24, 31, .06) 1px, transparent 1px);
+    linear-gradient(rgba(16, 21, 43, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 21, 43, .05) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 .gd {
   background-image:
-    linear-gradient(rgba(242, 238, 229, .06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(242, 238, 229, .06) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, .08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .08) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -69,12 +71,12 @@ a {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(255, 90, 31, .28);
+  box-shadow: 0 6px 18px rgba(46, 91, 255, .32);
 }
 
 .btn:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 6px rgba(20, 24, 31, .2);
+  box-shadow: 0 2px 6px rgba(16, 21, 43, .2);
 }
 
 .hb {
@@ -209,7 +211,7 @@ details[open] .chev {
 
 .opt:not([aria-pressed="true"]):hover {
   border-color: var(--ink) !important;
-  background-color: rgba(251, 250, 246, 0.8) !important;
+  background-color: rgba(244, 247, 253, 0.9) !important;
 }
 
 .plan {
@@ -261,19 +263,35 @@ details[open] .chev {
 }
 
 .service-card:hover .service-ruler-bar {
-  filter: drop-shadow(0 0 6px rgba(255, 90, 31, .75));
+  filter: drop-shadow(0 0 6px rgba(46, 91, 255, .75));
+}
+
+.service-cta-btn {
+  transition: background-color .18s ease, color .18s ease, transform .15s ease, box-shadow .15s ease;
+}
+
+.service-cta-btn:hover {
+  background: var(--accent) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(46, 91, 255, 0.4) !important;
+}
+
+.service-cta-btn:active {
+  background: #1e45dd !important;
+  color: #FFFFFF !important;
+  transform: translateY(1px);
 }
 
 /* ── 02 — Qanday ishlaydi: Interactive Step Timeline ── */
 @keyframes radarPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 90, 31, .75);
+    box-shadow: 0 0 0 0 rgba(46, 91, 255, .75);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(255, 90, 31, 0);
+    box-shadow: 0 0 0 10px rgba(46, 91, 255, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 90, 31, 0);
+    box-shadow: 0 0 0 0 rgba(46, 91, 255, 0);
   }
 }
 
@@ -351,13 +369,13 @@ details[open] .chev {
 
 @keyframes liveRadar {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 90, 31, .75);
+    box-shadow: 0 0 0 0 rgba(46, 91, 255, .75);
   }
   70% {
-    box-shadow: 0 0 0 8px rgba(255, 90, 31, 0);
+    box-shadow: 0 0 0 8px rgba(46, 91, 255, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 90, 31, 0);
+    box-shadow: 0 0 0 0 rgba(46, 91, 255, 0);
   }
 }
 
@@ -414,7 +432,7 @@ details[open] .chev {
 }
 
 .katalog-row:hover .mu {
-  color: #A9B0BA;
+  color: #8C9BB5;
 }
 
 /* ── Mobile Breakpoints (< 860px) ── */
@@ -479,7 +497,7 @@ details[open] .chev {
     align-items: center;
     width: 100%;
     padding-top: 10px;
-    border-top: 1px dashed rgba(20, 24, 31, .2);
+    border-top: 1px dashed rgba(16, 21, 43, .2);
   }
 
   .ticket-anim {
@@ -502,8 +520,9 @@ details[open] .chev {
   left: 0;
   top: 10px;
   width: min(380px, 92vw);
-  background: #F2EEE5;
-  color: #14181F;
+  background: #FFFFFF;
+  color: #10152B;
+  border: 1.5px solid #10152B;
   border-radius: 14px;
   padding: 20px;
   transform: rotate(-3deg);
@@ -519,8 +538,9 @@ details[open] .chev {
   right: 0;
   top: 120px;
   width: min(380px, 92vw);
-  background: #F2EEE5;
-  color: #14181F;
+  background: #FFFFFF;
+  color: #10152B;
+  border: 1.5px solid #10152B;
   border-radius: 14px;
   padding: 20px;
   transform: rotate(2deg);
@@ -538,8 +558,8 @@ details[open] .chev {
   top: 240px;
   max-width: 410px;
   width: calc(100% - 20px);
-  background: #F2EEE5;
-  color: #14181F;
+  background: #FFFFFF;
+  color: #10152B;
   border-radius: 14px;
   padding: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .45);

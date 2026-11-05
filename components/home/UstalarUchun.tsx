@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 
 interface SampleOrder {
@@ -91,12 +90,12 @@ export default function UstalarUchun() {
   return (
     <section style={{ padding: "clamp(48px, 8vw, 96px) 0" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)" }}>
-        <div style={{ background: "#0B5D66", color: "#F2EEE5", borderRadius: "24px", padding: "clamp(24px, 5vw, 64px)", display: "flex", flexWrap: "wrap", gap: "clamp(32px, 5vw, 56px)", alignItems: "center" }}>
+        <div style={{ background: "#2E5BFF", color: "#FFFFFF", borderRadius: "24px", padding: "clamp(24px, 5vw, 64px)", display: "flex", flexWrap: "wrap", gap: "clamp(32px, 5vw, 56px)", alignItems: "center" }}>
           
           {/* Left Column: Benefits */}
           <div style={{ flex: "1 1 440px", minWidth: "0", display: "flex", flexDirection: "column", gap: "26px", alignItems: "flex-start" }}>
-            <span className="m" style={{ fontSize: "13px", fontWeight: "600", letterSpacing: ".08em", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "8px", color: "#CFE3E1" }}>
-              <span style={{ width: "14px", height: "2px", background: "#CFE3E1" }} />
+            <span className="m" style={{ fontSize: "13px", fontWeight: "600", letterSpacing: ".08em", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "8px", color: "#DCE7FF" }}>
+              <span style={{ width: "14px", height: "2px", background: "#DCE7FF" }} />
               05 · Ustalar uchun
             </span>
             
@@ -104,7 +103,7 @@ export default function UstalarUchun() {
               Mijoz qidirmang. Buyurtmalar o’zi kelsin.
             </h2>
             
-            <p style={{ margin: "0", fontSize: "19px", lineHeight: "1.5", color: "#CFE3E1", maxWidth: "500px" }}>
+            <p style={{ margin: "0", fontSize: "19px", lineHeight: "1.5", color: "#DCE7FF", maxWidth: "500px" }}>
               Tarz’da bepul ro’yxatdan o’ting va Toshkent bo’yicha tayyor buyurtmalarga o’z narxingizni taklif qiling.
             </p>
             
@@ -129,12 +128,18 @@ export default function UstalarUchun() {
               </li>
             </ul>
 
-            <Link href="/ustalar-uchun" className="btn" style={{ background: "var(--accent)", color: "#14181F" }}>
+            <a
+              href="https://t.me/tarz_usta_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+              style={{ background: "var(--accent)", color: "#FFFFFF", border: "1.5px solid #10152B", boxShadow: "0 2px 0 #10152B" }}
+            >
               Usta bo’lib qo’shilish
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14181F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
-            </Link>
+            </a>
           </div>
 
           {/* Right Column: Animated & Truly Interactive Work Ticket Card */}
@@ -154,8 +159,8 @@ export default function UstalarUchun() {
             {/* Top part of ticket */}
             <div
               style={{
-                background: "#F2EEE5",
-                color: "#14181F",
+                background: "#FFFFFF",
+                color: "#10152B",
                 borderRadius: "16px 16px 0 0",
                 padding: "26px 26px 20px",
                 display: "flex",
@@ -166,7 +171,7 @@ export default function UstalarUchun() {
             >
               {/* Live badge & Order switcher pills */}
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "#0B5D66", display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "#2E5BFF", display: "inline-flex", alignItems: "center", gap: "6px" }}>
                   <span className="live-radar-dot" style={{ width: "8px", height: "8px", borderRadius: "50%", background: "var(--accent)" }} />
                   Yangi buyurtma · Jonli
                 </span>
@@ -179,9 +184,9 @@ export default function UstalarUchun() {
                       type="button"
                       onClick={() => handleSwitchOrder(i)}
                       style={{
-                        background: orderIdx === i ? "#14181F" : "#FFFFFF",
-                        color: orderIdx === i ? "#F2EEE5" : "#14181F",
-                        border: "1px solid #14181F",
+                        background: orderIdx === i ? "#10152B" : "#FFFFFF",
+                        color: orderIdx === i ? "#FFFFFF" : "#10152B",
+                        border: "1px solid #10152B",
                         borderRadius: "999px",
                         padding: "2px 8px",
                         fontSize: "11px",
@@ -205,13 +210,13 @@ export default function UstalarUchun() {
                   <br />
                   <span style={{ color: "var(--accent)" }}>{currentOrder.district}</span>
                 </div>
-                <div style={{ fontSize: "15px", color: "#5A5F69", marginTop: "6px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div style={{ fontSize: "15px", color: "#5F6B88", marginTop: "6px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <span>{currentOrder.task}</span>
                 </div>
               </div>
 
               {/* Budget indication */}
-              <div className="m" style={{ fontSize: "11px", color: "#5A5F69", background: "#E8E2D5", padding: "4px 8px", borderRadius: "6px", display: "inline-block" }}>
+              <div className="m" style={{ fontSize: "11px", color: "#5F6B88", background: "#F4F7FD", padding: "4px 8px", borderRadius: "6px", display: "inline-block" }}>
                 Mijoz byudjeti: <strong>{currentOrder.budgetHint}</strong>
               </div>
 
@@ -223,8 +228,8 @@ export default function UstalarUchun() {
                     position: "absolute",
                     top: "40px",
                     right: "20px",
-                    border: "3px solid #0B5D66",
-                    color: "#0B5D66",
+                    border: "3px solid #2E5BFF",
+                    color: "#2E5BFF",
                     padding: "6px 14px",
                     borderRadius: "8px",
                     fontWeight: "900",
@@ -242,16 +247,16 @@ export default function UstalarUchun() {
             </div>
 
             {/* Perforated ticket divider with semi-circle cutouts */}
-            <div style={{ position: "relative", height: "0", borderTop: "2px dashed #14181F", background: "#F2EEE5" }}>
-              <span style={{ position: "absolute", left: "-14px", top: "-15px", width: "28px", height: "28px", borderRadius: "50%", background: "#0B5D66" }} />
-              <span style={{ position: "absolute", right: "-14px", top: "-15px", width: "28px", height: "28px", borderRadius: "50%", background: "#0B5D66" }} />
+            <div style={{ position: "relative", height: "0", borderTop: "2px dashed #10152B", background: "#FFFFFF" }}>
+              <span style={{ position: "absolute", left: "-14px", top: "-15px", width: "28px", height: "28px", borderRadius: "50%", background: "#2E5BFF" }} />
+              <span style={{ position: "absolute", right: "-14px", top: "-15px", width: "28px", height: "28px", borderRadius: "50%", background: "#2E5BFF" }} />
             </div>
 
             {/* Bottom part of ticket: Truly Functional & Editable So'm Input */}
             <div
               style={{
-                background: "#F2EEE5",
-                color: "#14181F",
+                background: "#FFFFFF",
+                color: "#10152B",
                 borderRadius: "0 0 16px 16px",
                 padding: "22px 26px 26px",
                 display: "flex",
@@ -260,7 +265,7 @@ export default function UstalarUchun() {
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "#5A5F69" }}>
+                <span className="m" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".08em", textTransform: "uppercase", color: "#5F6B88" }}>
                   Sizning narxingiz
                 </span>
                 <span className="m" style={{ fontSize: "11px", color: "var(--accent)", fontWeight: "600" }}>
@@ -272,9 +277,9 @@ export default function UstalarUchun() {
               <div
                 style={{
                   height: "54px",
-                  border: "2px solid #14181F",
+                  border: "2px solid #10152B",
                   borderRadius: "10px",
-                  background: "#FBFAF6",
+                  background: "#FFFFFF",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
@@ -295,29 +300,29 @@ export default function UstalarUchun() {
                     fontFamily: "'JetBrains Mono', monospace",
                     fontSize: "20px",
                     fontWeight: "800",
-                    color: "#14181F",
+                    color: "#10152B",
                     width: "100%",
                     letterSpacing: "-0.02em",
                   }}
                 />
                 
-                <span className="m" style={{ fontSize: "14px", fontWeight: "700", color: "#5A5F69", marginLeft: "8px", pointerEvents: "none" }}>
+                <span className="m" style={{ fontSize: "14px", fontWeight: "700", color: "#5F6B88", marginLeft: "8px", pointerEvents: "none" }}>
                   so’m
                 </span>
               </div>
 
               {/* Quick suggestion price chips */}
               <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
-                <span className="m" style={{ fontSize: "10px", color: "#5A5F69" }}>Tezkor:</span>
+                <span className="m" style={{ fontSize: "10px", color: "#5F6B88" }}>Tezkor:</span>
                 {currentOrder.quickPrices.map((qp) => (
                   <button
                     key={qp}
                     type="button"
                     onClick={() => handleQuickPrice(qp)}
                     style={{
-                      background: priceInput === qp ? "#14181F" : "#FFFFFF",
-                      color: priceInput === qp ? "#F2EEE5" : "#14181F",
-                      border: "1px solid #14181F",
+                      background: priceInput === qp ? "#10152B" : "#FFFFFF",
+                      color: priceInput === qp ? "#FFFFFF" : "#10152B",
+                      border: "1px solid #10152B",
                       borderRadius: "6px",
                       padding: "2px 8px",
                       fontSize: "11px",
@@ -339,11 +344,11 @@ export default function UstalarUchun() {
                   style={{
                     fontSize: "12px",
                     fontWeight: "700",
-                    color: isSubmitted ? "#0B5D66" : "var(--accent)",
-                    background: isSubmitted ? "#D3E6E3" : "#FEECE6",
+                    color: isSubmitted ? "#2E5BFF" : "var(--accent)",
+                    background: isSubmitted ? "#EBF1FF" : "#EBF1FF",
                     padding: "6px 10px",
                     borderRadius: "6px",
-                    border: isSubmitted ? "1px solid #0B5D66" : "1px solid var(--accent)",
+                    border: isSubmitted ? "1px solid #2E5BFF" : "1px solid var(--accent)",
                   }}
                 >
                   {feedbackMsg}
@@ -359,9 +364,9 @@ export default function UstalarUchun() {
                   style={{
                     height: "54px",
                     borderRadius: "10px",
-                    background: "#0B5D66",
-                    color: "#F2EEE5",
-                    border: "1.5px solid #14181F",
+                    background: "#2E5BFF",
+                    color: "#FFFFFF",
+                    border: "1.5px solid #10152B",
                     fontWeight: "700",
                     fontSize: "15px",
                     display: "flex",
@@ -370,7 +375,7 @@ export default function UstalarUchun() {
                     gap: "8px",
                     cursor: "pointer",
                     width: "100%",
-                    boxShadow: "0 2px 0 #14181F",
+                    boxShadow: "0 2px 0 #10152B",
                   }}
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -386,9 +391,9 @@ export default function UstalarUchun() {
                   style={{
                     height: "54px",
                     borderRadius: "10px",
-                    background: "#14181F",
-                    color: "#F2EEE5",
-                    border: "1.5px solid #14181F",
+                    background: "#10152B",
+                    color: "#FFFFFF",
+                    border: "1.5px solid #10152B",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

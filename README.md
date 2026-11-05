@@ -20,6 +20,8 @@ Dizayn (6 sahifa) 1:1 piksel aniqligida Next.js 14 + TypeScript'ga ko'chirilgan.
 - `components/<sahifa>/*.tsx` — sahifa bo'limlari (dizayndagi izohlar bo'yicha)
 - `components/Header.tsx` — joriy sahifani avtomatik belgilaydi
 
-## Accent rangi
-Dizaynda `#FF5A1F`. O'zgartirish: `app/globals.css` dagi `--accent`
-(variantlar: `#E8B931`, `#2FA39A`, `#7A5AF8`).
+## Brand ranglari
+- **Asosiy havo rang (Accent):** `#2E5BFF` (Logodagi pastki qanot rangi)
+- **To'q ko'k / Matn (Ink / Navy):** `#10152B` (Logodagi yuqori qanot va "tarz" matni)
+- **Oq fon (Background):** `#FFFFFF` / kartalar uchun `#F4F7FD`
+- **Logo fayllari:** `public/logo.png` va `public/logo-white.png`

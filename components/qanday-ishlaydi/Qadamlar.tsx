@@ -123,6 +123,7 @@ export default function Qadamlar() {
 
   const handleContact = () => {
     setContactFeedback(`${activeOffer.name} usta bilan Telegram orqali bog’lanish ochilmoqda...`);
+    window.open("https://t.me/tarz_usta_bot", "_blank", "noopener,noreferrer");
     setTimeout(() => {
       setContactFeedback(null);
     }, 3500);
@@ -137,29 +138,29 @@ export default function Qadamlar() {
           
           {/* Text Description */}
           <div style={{ flex: "1 1 420px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px" }}>
-            <span className="m" style={{ fontSize: "13px", letterSpacing: ".1em", textTransform: "uppercase", color: "#0B5D66", fontWeight: "700", display: "flex", alignItems: "center", gap: "8px" }}>
-              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0B5D66" }} />
+            <span className="m" style={{ fontSize: "13px", letterSpacing: ".1em", textTransform: "uppercase", color: "#2E5BFF", fontWeight: "700", display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#2E5BFF" }} />
               Qadam 1 · 2 daqiqa
             </span>
-            <div className="d" style={{ fontSize: "clamp(80px, 12vw, 150px)", lineHeight: ".78", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #14181F" }}>
+            <div className="d" style={{ fontSize: "clamp(80px, 12vw, 150px)", lineHeight: ".78", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #10152B" }}>
               1
             </div>
             <h2 className="d" style={{ margin: "0", fontSize: "clamp(32px, 6vw, 48px)", lineHeight: "1.05", letterSpacing: "-0.035em", fontWeight: "800" }}>
               Buyurtma joylang
             </h2>
-            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 20px)", lineHeight: "1.55", color: "#5A5F69", maxWidth: "480px" }}>
+            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 20px)", lineHeight: "1.55", color: "#5F6B88", maxWidth: "480px" }}>
               Ish turini, tumaningizni va qisqa tavsifni yozing. Tekshirilgan ustalar o’z narxini taklif qilishni boshlaydi.
             </p>
           </div>
 
           {/* Interactive Card from User Screenshot */}
-          <div className="gb" style={{ flex: "1 1 440px", minWidth: "0", backgroundColor: "#E8E3D6", border: "1.5px solid #14181F", borderRadius: "16px", padding: "32px 20px", display: "flex", justifyContent: "center" }}>
+          <div className="gb" style={{ flex: "1 1 440px", minWidth: "0", backgroundColor: "#F4F7FD", border: "1.5px solid #10152B", borderRadius: "16px", padding: "32px 20px", display: "flex", justifyContent: "center" }}>
             <div
               style={{
                 width: "100%",
                 maxWidth: "360px",
-                background: "#FBFAF6",
-                border: "1.5px solid #14181F",
+                background: "#FFFFFF",
+                border: "1.5px solid #10152B",
                 borderRadius: "14px",
                 boxShadow: "8px 8px 0 var(--accent)",
                 padding: "24px",
@@ -174,7 +175,7 @@ export default function Qadamlar() {
                 <strong className="d" style={{ fontSize: "24px", letterSpacing: "-0.02em" }}>
                   Qaysi usta kerak?
                 </strong>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#0B5D66", background: "#D3E6E3", padding: "3px 8px", borderRadius: "999px" }}>
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", padding: "3px 8px", borderRadius: "999px" }}>
                   1-BOSQICH
                 </span>
               </div>
@@ -190,9 +191,9 @@ export default function Qadamlar() {
                       type="button"
                       onClick={() => handleSelectCategory(cat)}
                       style={{
-                        background: active ? "#14181F" : "#FFFFFF",
-                        color: active ? "#F2EEE5" : "#14181F",
-                        border: "1.5px solid #14181F",
+                        background: active ? "#10152B" : "#FFFFFF",
+                        color: active ? "#FFFFFF" : "#10152B",
+                        border: "1.5px solid #10152B",
                         borderRadius: "999px",
                         padding: "7px 14px",
                         fontSize: "12px",
@@ -211,7 +212,7 @@ export default function Qadamlar() {
 
               {/* Tuman Selector Dropdown / Input */}
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#5A5F69", textTransform: "uppercase" }}>
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#5F6B88", textTransform: "uppercase" }}>
                   Tuman
                 </span>
                 <div style={{ position: "relative" }}>
@@ -221,13 +222,13 @@ export default function Qadamlar() {
                     style={{
                       width: "100%",
                       height: "44px",
-                      border: "1.5px solid #14181F",
+                      border: "1.5px solid #10152B",
                       borderRadius: "8px",
                       padding: "0 12px",
                       fontWeight: "600",
                       fontSize: "15px",
                       background: "#FFFFFF",
-                      color: "#14181F",
+                      color: "#10152B",
                       fontFamily: "'Inter Tight', system-ui, sans-serif",
                       outline: "none",
                       cursor: "pointer",
@@ -246,7 +247,7 @@ export default function Qadamlar() {
                     height="16"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#14181F"
+                    stroke="#10152B"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -260,7 +261,7 @@ export default function Qadamlar() {
               {/* Real Editable Tavsif (Description) Input */}
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#5A5F69", textTransform: "uppercase" }}>
+                  <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#5F6B88", textTransform: "uppercase" }}>
                     Tavsif
                   </span>
                   <span className="m" style={{ fontSize: "10px", color: "#888" }}>
@@ -275,13 +276,13 @@ export default function Qadamlar() {
                   style={{
                     width: "100%",
                     minHeight: "68px",
-                    border: "1.5px solid #14181F",
+                    border: "1.5px solid #10152B",
                     borderRadius: "8px",
                     padding: "10px 12px",
                     fontSize: "14px",
                     fontFamily: "'Inter Tight', system-ui, sans-serif",
                     fontWeight: "500",
-                    color: "#14181F",
+                    color: "#10152B",
                     background: "#FFFFFF",
                     outline: "none",
                     resize: "none",
@@ -298,9 +299,9 @@ export default function Qadamlar() {
                     type="button"
                     onClick={() => handleSelectChip(chip)}
                     style={{
-                      background: desc === chip ? "#E8E2D5" : "#FFFFFF",
-                      color: "#14181F",
-                      border: "1px solid #D6D0C0",
+                      background: desc === chip ? "#F4F7FD" : "#FFFFFF",
+                      color: "#10152B",
+                      border: "1px solid #E2E8F0",
                       borderRadius: "6px",
                       padding: "2px 8px",
                       fontSize: "11px",
@@ -321,9 +322,9 @@ export default function Qadamlar() {
                 style={{
                   height: "48px",
                   borderRadius: "10px",
-                  background: submitted ? "#0B5D66" : "var(--accent)",
-                  color: submitted ? "#F2EEE5" : "#14181F",
-                  border: "1.5px solid #14181F",
+                  background: submitted ? "#2E5BFF" : "var(--accent)",
+                  color: submitted ? "#FFFFFF" : "#10152B",
+                  border: "1.5px solid #10152B",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -332,7 +333,7 @@ export default function Qadamlar() {
                   cursor: "pointer",
                   width: "100%",
                   gap: "8px",
-                  boxShadow: "0 2px 0 #14181F",
+                  boxShadow: "0 2px 0 #10152B",
                   transition: "all .15s ease",
                 }}
               >
@@ -362,13 +363,13 @@ export default function Qadamlar() {
         <div id="qadam-2" style={{ display: "flex", flexWrap: "wrap-reverse", gap: "48px", alignItems: "center" }}>
           
           {/* Card: 3 ta taklif (Interactive) */}
-          <div className="gb" style={{ flex: "1 1 440px", minWidth: "0", backgroundColor: "#E8E3D6", border: "1.5px solid #14181F", borderRadius: "16px", padding: "32px 20px", display: "flex", justifyContent: "center" }}>
+          <div className="gb" style={{ flex: "1 1 440px", minWidth: "0", backgroundColor: "#F4F7FD", border: "1.5px solid #10152B", borderRadius: "16px", padding: "32px 20px", display: "flex", justifyContent: "center" }}>
             <div
               style={{
                 width: "100%",
                 maxWidth: "360px",
-                background: "#FBFAF6",
-                border: "1.5px solid #14181F",
+                background: "#FFFFFF",
+                border: "1.5px solid #10152B",
                 borderRadius: "14px",
                 boxShadow: "8px 8px 0 var(--accent)",
                 padding: "22px",
@@ -382,7 +383,7 @@ export default function Qadamlar() {
                 <strong className="d" style={{ fontSize: "22px", letterSpacing: "-0.02em" }}>
                   3 ta taklif keldi
                 </strong>
-                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#0B5D66", background: "#D3E6E3", padding: "3px 8px", borderRadius: "999px" }}>
+                <span className="m" style={{ fontSize: "11px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", padding: "3px 8px", borderRadius: "999px" }}>
                   {district} bo’yicha
                 </span>
               </div>
@@ -401,16 +402,16 @@ export default function Qadamlar() {
                         alignItems: "center",
                         gap: "12px",
                         padding: "10px 12px",
-                        border: on ? "1.5px solid #14181F" : "1px solid #D6D0C0",
+                        border: on ? "1.5px solid #10152B" : "1px solid #E2E8F0",
                         borderRadius: "10px",
-                        background: on ? "#D3E6E3" : "#FFFFFF",
+                        background: on ? "#EBF1FF" : "#FFFFFF",
                         cursor: "pointer",
                         width: "100%",
                         textAlign: "left",
                         color: "inherit",
                         font: "inherit",
                         transition: "all .15s ease",
-                        boxShadow: on ? "0 2px 0 #14181F" : "none",
+                        boxShadow: on ? "0 2px 0 #10152B" : "none",
                       }}
                     >
                       <span
@@ -418,8 +419,8 @@ export default function Qadamlar() {
                           width: "36px",
                           height: "36px",
                           borderRadius: "50%",
-                          background: "#14181F",
-                          color: "#F2EEE5",
+                          background: "#10152B",
+                          color: "#FFFFFF",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -434,11 +435,11 @@ export default function Qadamlar() {
                         <strong style={{ fontSize: "15px" }}>
                           {o.name} · {o.rating}
                         </strong>
-                        <span className="m" style={{ fontSize: "11px", color: on ? "#14181F" : "#5A5F69" }}>
+                        <span className="m" style={{ fontSize: "11px", color: on ? "#10152B" : "#5F6B88" }}>
                           {o.badge} · {currentCatData.name}
                         </span>
                       </div>
-                      <strong className="m" style={{ fontSize: "13px", color: on ? "#14181F" : "#2F3A3D" }}>
+                      <strong className="m" style={{ fontSize: "13px", color: on ? "#10152B" : "#10152B" }}>
                         {o.price}
                       </strong>
                     </button>
@@ -446,7 +447,7 @@ export default function Qadamlar() {
                 })}
               </div>
 
-              <div className="m" style={{ fontSize: "11px", color: "#5A5F69", textAlign: "center", paddingTop: "4px" }}>
+              <div className="m" style={{ fontSize: "11px", color: "#5F6B88", textAlign: "center", paddingTop: "4px" }}>
                 Narx · reyting · sharh yonma-yon
               </div>
             </div>
@@ -454,17 +455,17 @@ export default function Qadamlar() {
 
           {/* Text Description */}
           <div style={{ flex: "1 1 420px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px" }}>
-            <span className="m" style={{ fontSize: "13px", letterSpacing: ".1em", textTransform: "uppercase", color: "#0B5D66", fontWeight: "700", display: "flex", alignItems: "center", gap: "8px" }}>
-              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0B5D66" }} />
+            <span className="m" style={{ fontSize: "13px", letterSpacing: ".1em", textTransform: "uppercase", color: "#2E5BFF", fontWeight: "700", display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#2E5BFF" }} />
               Qadam 2 · 10–30 daqiqa
             </span>
-            <div className="d" style={{ fontSize: "clamp(80px, 12vw, 150px)", lineHeight: ".78", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #14181F" }}>
+            <div className="d" style={{ fontSize: "clamp(80px, 12vw, 150px)", lineHeight: ".78", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #10152B" }}>
               2
             </div>
             <h2 className="d" style={{ margin: "0", fontSize: "clamp(32px, 6vw, 48px)", lineHeight: "1.05", letterSpacing: "-0.035em", fontWeight: "800" }}>
               Takliflarni solishtiring
             </h2>
-            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 20px)", lineHeight: "1.55", color: "#5A5F69", maxWidth: "480px" }}>
+            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 20px)", lineHeight: "1.55", color: "#5F6B88", maxWidth: "480px" }}>
               Ustalar o’z narxini taklif qiladi. Narx, reyting va sharhlarni yonma-yon ko’rib, o’zingizga ma’qulini tanlaysiz.
             </p>
           </div>
@@ -475,29 +476,29 @@ export default function Qadamlar() {
           
           {/* Text Description */}
           <div style={{ flex: "1 1 420px", minWidth: "0", display: "flex", flexDirection: "column", gap: "20px" }}>
-            <span className="m" style={{ fontSize: "13px", letterSpacing: ".1em", textTransform: "uppercase", color: "#0B5D66", fontWeight: "700", display: "flex", alignItems: "center", gap: "8px" }}>
-              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0B5D66" }} />
+            <span className="m" style={{ fontSize: "13px", letterSpacing: ".1em", textTransform: "uppercase", color: "#2E5BFF", fontWeight: "700", display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#2E5BFF" }} />
               Qadam 3 · shoshilinch ishda ≈ 2 soat
             </span>
-            <div className="d" style={{ fontSize: "clamp(80px, 12vw, 150px)", lineHeight: ".78", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #14181F" }}>
+            <div className="d" style={{ fontSize: "clamp(80px, 12vw, 150px)", lineHeight: ".78", fontWeight: "800", letterSpacing: "-0.06em", color: "transparent", WebkitTextStroke: "2px #10152B" }}>
               3
             </div>
             <h2 className="d" style={{ margin: "0", fontSize: "clamp(32px, 6vw, 48px)", lineHeight: "1.05", letterSpacing: "-0.035em", fontWeight: "800" }}>
               Ustani tanlang
             </h2>
-            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 20px)", lineHeight: "1.55", color: "#5A5F69", maxWidth: "480px" }}>
+            <p style={{ margin: "0", fontSize: "clamp(16px, 2.5vw, 20px)", lineHeight: "1.55", color: "#5F6B88", maxWidth: "480px" }}>
               Ma’qul taklifni tanlab, usta bilan to’g’ridan-to’g’ri Telegram’da bog’lanasiz. Ish tugagach, sharh qoldirishingiz mumkin.
             </p>
           </div>
 
           {/* Card: Usta tanlandi (Interactive) */}
-          <div className="gb" style={{ flex: "1 1 440px", minWidth: "0", backgroundColor: "#E8E3D6", border: "1.5px solid #14181F", borderRadius: "16px", padding: "32px 20px", display: "flex", justifyContent: "center" }}>
+          <div className="gb" style={{ flex: "1 1 440px", minWidth: "0", backgroundColor: "#F4F7FD", border: "1.5px solid #10152B", borderRadius: "16px", padding: "32px 20px", display: "flex", justifyContent: "center" }}>
             <div
               style={{
                 width: "100%",
                 maxWidth: "360px",
-                background: "#FBFAF6",
-                border: "1.5px solid #14181F",
+                background: "#FFFFFF",
+                border: "1.5px solid #10152B",
                 borderRadius: "14px",
                 boxShadow: "8px 8px 0 var(--accent)",
                 padding: "24px",
@@ -510,7 +511,7 @@ export default function Qadamlar() {
               }}
             >
               <div style={{ position: "relative" }}>
-                <span style={{ width: "64px", height: "64px", borderRadius: "50%", background: "#14181F", color: "#F2EEE5", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "800", fontSize: "24px" }}>
+                <span style={{ width: "64px", height: "64px", borderRadius: "50%", background: "#10152B", color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "800", fontSize: "24px" }}>
                   {activeOffer.letter}
                 </span>
                 <span
@@ -521,7 +522,7 @@ export default function Qadamlar() {
                     width: "20px",
                     height: "20px",
                     borderRadius: "50%",
-                    background: "#0B5D66",
+                    background: "#2E5BFF",
                     color: "#FFFFFF",
                     display: "flex",
                     alignItems: "center",
@@ -539,7 +540,7 @@ export default function Qadamlar() {
                 <strong className="d" style={{ fontSize: "24px", letterSpacing: "-0.02em" }}>
                   {activeOffer.name} usta tanlandi
                 </strong>
-                <div className="m" style={{ fontSize: "12px", color: "#0B5D66", fontWeight: "700", marginTop: "4px" }}>
+                <div className="m" style={{ fontSize: "12px", color: "#2E5BFF", fontWeight: "700", marginTop: "4px" }}>
                   ✓ {currentCatData.name} ({district}) · {activeOffer.price}
                 </div>
               </div>
@@ -549,7 +550,7 @@ export default function Qadamlar() {
               </div>
 
               {contactFeedback && (
-                <div className="m" style={{ fontSize: "12px", fontWeight: "700", color: "#0B5D66", background: "#D3E6E3", padding: "6px 12px", borderRadius: "6px", width: "100%" }}>
+                <div className="m" style={{ fontSize: "12px", fontWeight: "700", color: "#2E5BFF", background: "#EBF1FF", padding: "6px 12px", borderRadius: "6px", width: "100%" }}>
                   {contactFeedback}
                 </div>
               )}
@@ -562,9 +563,9 @@ export default function Qadamlar() {
                   height: "48px",
                   width: "100%",
                   borderRadius: "10px",
-                  background: "#0B5D66",
-                  color: "#F2EEE5",
-                  border: "1.5px solid #14181F",
+                  background: "#2E5BFF",
+                  color: "#FFFFFF",
+                  border: "1.5px solid #10152B",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -572,7 +573,7 @@ export default function Qadamlar() {
                   fontSize: "15px",
                   cursor: "pointer",
                   gap: "8px",
-                  boxShadow: "0 2px 0 #14181F",
+                  boxShadow: "0 2px 0 #10152B",
                 }}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -593,9 +594,9 @@ export default function Qadamlar() {
                   width: "100%",
                   boxSizing: "border-box",
                   borderRadius: "10px",
-                  border: "1.5px solid #14181F",
+                  border: "1.5px solid #10152B",
                   background: "#FFFFFF",
-                  color: "#14181F",
+                  color: "#10152B",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
