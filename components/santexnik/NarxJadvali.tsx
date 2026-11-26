@@ -47,36 +47,36 @@ export default function NarxJadvali() {
                 </td>
               </tr>
               <tr>
-                <th scope="row" style={{ padding: "22px 28px", textAlign: "left", fontWeight: "700", borderBottom: "1px solid #E2E8F0", color: "#5F6B88" }}>
-                  [Ish turi 1]
+                <th scope="row" style={{ padding: "22px 28px", textAlign: "left", fontWeight: "700", borderBottom: "1px solid #E2E8F0" }}>
+                  Kran va smesitel almashtirish
                 </th>
-                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0", color: "#5F6B88" }}>
+                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0" }}>
                   dona
                 </td>
-                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0", color: "#5F6B88" }}>
-                  [000 000–000 000]
+                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0", fontWeight: "600" }}>
+                  80 000–140 000
                 </td>
               </tr>
               <tr>
-                <th scope="row" style={{ padding: "22px 28px", textAlign: "left", fontWeight: "700", borderBottom: "1px solid #E2E8F0", color: "#5F6B88" }}>
-                  [Ish turi 2]
+                <th scope="row" style={{ padding: "22px 28px", textAlign: "left", fontWeight: "700", borderBottom: "1px solid #E2E8F0" }}>
+                  Unitaz o’rnatish
                 </th>
-                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0", color: "#5F6B88" }}>
+                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0" }}>
                   dona
                 </td>
-                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0", color: "#5F6B88" }}>
-                  [000 000–000 000]
+                <td className="m" style={{ padding: "22px 28px", borderBottom: "1px solid #E2E8F0", fontWeight: "600" }}>
+                  150 000–250 000
                 </td>
               </tr>
               <tr>
-                <th scope="row" style={{ padding: "22px 28px", textAlign: "left", fontWeight: "700", color: "#5F6B88" }}>
-                  [Ish turi 3]
+                <th scope="row" style={{ padding: "22px 28px", textAlign: "left", fontWeight: "700" }}>
+                  Quvur oqishini bartaraf etish
                 </th>
-                <td className="m" style={{ padding: "22px 28px", color: "#5F6B88" }}>
-                  dona
+                <td className="m" style={{ padding: "22px 28px" }}>
+                  nuqta
                 </td>
-                <td className="m" style={{ padding: "22px 28px", color: "#5F6B88" }}>
-                  [000 000–000 000]
+                <td className="m" style={{ padding: "22px 28px", fontWeight: "600" }}>
+                  90 000–180 000
                 </td>
               </tr>
             </tbody>

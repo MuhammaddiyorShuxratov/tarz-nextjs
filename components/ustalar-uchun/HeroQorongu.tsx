@@ -83,7 +83,7 @@ export default function HeroQorongu() {
               <div style={{ display: "flex", gap: "10px", alignItems: "center", marginTop: "8px" }}>
                 <div style={{ flex: "1", height: "44px", border: "1.5px solid #10152B", borderRadius: "8px", background: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 12px" }}>
                   <span className="m" style={{ fontWeight: "700", fontSize: "15px" }}>
-                    [000 000]
+                    95 000
                   </span>
                   <span className="m" style={{ fontSize: "12px", color: "#5F6B88" }}>
                     so’m

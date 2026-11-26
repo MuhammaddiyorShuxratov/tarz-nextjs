@@ -22,23 +22,17 @@ export default function Footer() {
                   <path d="M21 4 3 11l6 2 2 7 3-4 5 4z" />
                 </svg>
               </a>
-              <a href="#" aria-label="Instagram" style={{ width: "46px", height: "46px", borderRadius: "10px", border: "1px solid #1F2642", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF" }}>
+              <a href="https://instagram.com/tarz.uz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: "46px", height: "46px", borderRadius: "10px", border: "1px solid #1F2642", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF" }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="5" />
                   <circle cx="12" cy="12" r="4" />
                   <circle cx="17.5" cy="6.5" r="1" />
                 </svg>
               </a>
-              <a href="#" aria-label="LinkedIn" style={{ width: "46px", height: "46px", borderRadius: "10px", border: "1px solid #1F2642", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF" }}>
+              <a href="https://steppeventure.builders/" target="_blank" rel="noopener noreferrer" aria-label="Steppe Venture Builders" style={{ width: "46px", height: "46px", borderRadius: "10px", border: "1px solid #1F2642", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF" }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <rect x="3" y="3" width="18" height="18" rx="3" />
-                  <path d="M7 10v7M7 7v.01M11 17v-7M11 13a3 3 0 0 1 6 0v4" />
-                </svg>
-              </a>
-              <a href="#" aria-label="YouTube" style={{ width: "46px", height: "46px", borderRadius: "10px", border: "1px solid #1F2642", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <rect x="2" y="5" width="20" height="14" rx="4" />
-                  <path d="m10 9 5 3-5 3z" />
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3.6 9h16.8M3.6 15h16.8M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18" />
                 </svg>
               </a>
             </div>
@@ -83,9 +77,9 @@ export default function Footer() {
               <Link className="fl" href="/savollar">
                 Savollar
               </Link>
-              <a className="fl" href="#">
+              <Link className="fl" href="/biz-haqimizda">
                 Biz haqimizda
-              </a>
+              </Link>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "14px", fontSize: "16px" }}>
               <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "12px", fontWeight: "500", letterSpacing: ".1em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "6px" }}>
@@ -94,30 +88,41 @@ export default function Footer() {
               <a className="fl" href="https://t.me/tarz_usta_bot" target="_blank" rel="noopener noreferrer">
                 @tarz_usta_bot
               </a>
-              <a className="fl" href="#">
-                [+998 00 000 00 00]
+              <a className="fl" href="tel:+998712001234">
+                +998 71 200 12 34
+              </a>
+              <a className="fl" href="mailto:info@tarz.uz">
+                info@tarz.uz
               </a>
               <span>
-                Toshkent, O’zbekiston
-              </span>
-              <span>
-                [Manzil]
+                Chilonzor tumani, Bunyodkor shoh ko’chasi, 15 · Toshkent
               </span>
             </div>
           </div>
         </div>
-        <div style={{ borderTop: "1px solid #1F2642", padding: "22px 0", display: "flex", justifyContent: "space-between", gap: "16px", flexWrap: "wrap", fontFamily: "'JetBrains Mono',monospace", fontSize: "13px" }}>
+        <div style={{ borderTop: "1px solid #1F2642", padding: "22px 0", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px", flexWrap: "wrap", fontFamily: "'JetBrains Mono',monospace", fontSize: "13px" }}>
           <span>
             {"© 2026 Tarz · "}
-            <a className="fl" href="#">
+            <Link className="fl" href="/maxfiylik">
               Maxfiylik
-            </a>
+            </Link>
             {" · "}
-            <a className="fl" href="#">
+            <Link className="fl" href="/shartlar">
               Shartlar
+            </Link>
+          </span>
+          <span>
+            {"Powered by "}
+            <a
+              className="fl"
+              href="https://steppeventure.builders/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#FFFFFF", textDecoration: "underline", textUnderlineOffset: "3px" }}
+            >
+              Steppe Venture Builders
             </a>
           </span>
-
         </div>
       </div>
       <div aria-hidden="true" style={{ height: "clamp(120px, 20vw, 250px)", overflow: "hidden", display: "flex", justifyContent: "center" }}>
