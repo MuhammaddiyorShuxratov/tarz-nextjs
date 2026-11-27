@@ -1,0 +1,8 @@
+name: tarz-site
+
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "127.0.0.1:3030:3000"
